@@ -22,17 +22,31 @@ Title | 介绍 | 面试内容 |
       9). List out at least 4 metrics you will use to evaluate model performance and tell the advantage for each of them. (F1 score, ROC curve, recall, etc…)
     10). What would you do if you have > 30% missing value in an important field before building the model?
 
+* **Statistics, Probability, A/B test**
+      1). What is p-value? What is confidence interval? Explain them to a product manager or non-technical person.. (*cannot just answer 5% cutoff in the distribution, need more details and plain language*)
+      2). How do you understand the "Power" of a statistical test?
+      3). If a distribution is right-skewed, what's the relationship between medium, mode, and mean?
+      4). When do you use T-test instead of Z-test? List some differences between these two.
+      5). Dice problem-1: How will you test if a coin is fair or not? How will you design the process(有时会要求编程实现)? what test would you use?
+      6). Dice problem-2: How to simulate a fair coin with one unfair coin?
+      7). [3 door questions](https://www.theproblemsite.com/games/treasure-hunt/door-hint) (classic questions)
+      8). Bayes Questions:  Tom takes a cancer test and the test is advertised as being 99% accurate: if you have cancer you will test positive 99% of the time, and if you don't have cancer, you will test negative 99% of the time. If 1% of all people have cancer and Tom tests positive, what is the prob that Tom has the disease? (Very classic *cancer screen* question. Other similar questions could be solved if comprehend this one)
+      9). How do you calculate the sample size for an A/B testing?
+    10). If after running an A/B testing you find the fact that the desired metric(i.e, Click Through Rate) is going up while another metric is decreasing(i.e., Clicks). How would you make a decision?
+    11). Now assuming you have an A/B testing result reflecting your test result is kind of negative (i.e, p-value ~= 20%). How will you communicate with the product manager?
+           If given the above 20% p-value, the product manager still decides to launch this new feature, how would you claim your suggestions and alerts?
+
+
 * **Resources**
       1). Coursera: [Machine learning by Andrew Ng](https://www.coursera.org/learn/machine-learning)
-          *Classic but useful*
+          ***Classic but useful***
       2). [15 hours of expert ML videos](https://www.dataschool.io/15-hours-of-expert-machine-learning-videos/.) 
-          *Quickly go through ML fundamental algorithm*
+          ***Quickly go through ML fundamental algorithm***
       3). [An Introduction to Statistical Learning](https://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf)
-          *One of the best book for Stat and ML*
+          ***One of the best book for Stat and ML***
       4). 《Practical Statistics for Data Scientists: 50 Essential Concepts》
-          *Practical book, tiny concepts but useful. Not deep but more boardly understanding of ML*
+          ***Practical book, tiny concepts but useful. Not deep but more boardly understanding of ML***
       5).   Medium: Towards Data Science
            Especially: [Machine Learning 101](https://medium.com/machine-learning-101)
-          *Clear and understandable. Interpreting abstruct algorithms intuitively, such as KNN, Random Forest, Decision Tree, *
-这个小专题，非常浅显易懂，适合初学者用具象的方式理解抽象算法。
-      6). StackOverflow(https://stackoverflow.com/)自然也是不能漏掉的，学data或者编程总会遇到很细枝末节的问题，这些一般文章里没有，所以就需要求助社群的力量了。
+          ***Clear and understandable. Interpreting abstruct algorithms intuitively, such as KNN, Random Forest, Decision Tree, SVM, Adaboost***
+      6). [StackOverflow](https://stackoverflow.com/)
