@@ -1,6 +1,6 @@
 ## Question Scope
 
-[An Introduction to Statistical Learning](https://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf)
+
 
 Title | 介绍 | 面试内容 |
 |-------|--------|----------|
@@ -21,3 +21,18 @@ Title | 介绍 | 面试内容 |
       8). When will you use L1 regularization compared to L2?
       9). List out at least 4 metrics you will use to evaluate model performance and tell the advantage for each of them. (F1 score, ROC curve, recall, etc…)
     10). What would you do if you have > 30% missing value in an important field before building the model?
+
+* **Resources**
+      1). Coursera: [Machine learning by Andrew Ng](https://www.coursera.org/learn/machine-learning)
+          *Classic but useful*
+      2). [15 hours of expert ML videos](https://www.dataschool.io/15-hours-of-expert-machine-learning-videos/.) 
+          *Quickly go through ML fundamental algorithm*
+      3). [An Introduction to Statistical Learning](https://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf)
+          *One of the best book for Stat and ML*
+      4). 《Practical Statistics for Data Scientists: 50 Essential Concepts》
+          *Practical book, tiny concepts but useful. Not deep but more boardly understanding of ML*
+      5).   Medium: Towards Data Science
+           Especially: [Machine Learning 101](https://medium.com/machine-learning-101)
+          *Clear and understandable. Interpreting abstruct algorithms intuitively, such as KNN, Random Forest, Decision Tree, *
+这个小专题，非常浅显易懂，适合初学者用具象的方式理解抽象算法。
+      6). StackOverflow(https://stackoverflow.com/)自然也是不能漏掉的，学data或者编程总会遇到很细枝末节的问题，这些一般文章里没有，所以就需要求助社群的力量了。
