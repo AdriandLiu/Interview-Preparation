@@ -16,4 +16,4 @@ The Dummy variable trap is a scenario where there are attributes which are highl
 
 ## ANN training step
 ![](./pics/ANN training step.png)
-
+![](./pics/ANN training step.png)
