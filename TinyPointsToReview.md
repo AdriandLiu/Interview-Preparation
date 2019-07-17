@@ -16,3 +16,21 @@ The Dummy variable trap is a scenario where there are attributes which are highl
 
 ## ANN training step
 ![](./pics/ANN_training_step.png)
+
+## Activation Functions:
+#### Rectifier
+![](./pics/rectifier.png)
+#### Sigmoid
+![](./pics/sigmoid.png)
+
+## Keras 
+#### Dense(): Choose number of nodes in the hidden layer
+units = avg(# of nodes in the input layer, # of nodes in the output layer)
+in which, 11 predictors and 1 response variable => (11+1)/2 => 6
+
+#### Choose activation function:
+* rectifier for hidden layer
+* sigmoid for output layer
+
+#### Sigmoid vs Softmax
+![](./pics/sigmoid&softmax.png)
