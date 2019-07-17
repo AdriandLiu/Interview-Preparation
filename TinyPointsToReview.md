@@ -33,6 +33,9 @@ in which, 11 predictors and 1 response variable => (11+1)/2 => 6
 * sigmoid for output layer
 
 #### Sigmoid vs Softmax
-<p align="center">
-  <img src=./pics/sigmoid&softmax.png>
-</p>
+|Softmax Function|	Sigmoid Function|
+|-------|----------|
+|Used for multi-classification in logistic regression model|Used for binary classification in logistic regression model|
+|The probabilities sum will be 1	| The probabilities sum need not be 1|
+|Used in the different layers of neural networks| Used as activation function while building neural networks|
+|The high value will have the higher probability than other values|The high value will have the high probability but not the higher probability|
