@@ -33,4 +33,7 @@ in which, 11 predictors and 1 response variable => (11+1)/2 => 6
 * sigmoid for output layer
 
 #### Sigmoid vs Softmax
-<center>![](./pics/sigmoid&softmax.png)
+![](./pics/sigmoid&softmax.png)
+<p align="center">
+  <img width="460" height="300" src=./pics/sigmoid&softmax.png>
+</p>
