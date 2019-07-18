@@ -43,7 +43,7 @@ in which, 11 predictors and 1 response variable => (11+1)/2 => 6
 * **Softmax:** Use in **output layer** for classification In the case of multiclass specification, the actual class you have predicted will assemble in a value close to 1. And all other classes are assembled in values close to 0
 * **Linear:** Use in **output layer** for regression
 
-#### Loss Functions:
+#### Loss Functions: ?????????????
 Cross-Entropy: Classification the decision boundary in a classification task is large (in comparison with regression)
 
 MSE: Regression
@@ -67,5 +67,6 @@ when n hidden layers use an activation like the sigmoid function, n small deriva
 QUESTION: WHY ONE-HOT IN CLASSIFIER
 MSE VS CROSS-ENTROPY
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NDkwNTEzMCwxNzAyMzE2MjhdfQ==
+eyJoaXN0b3J5IjpbNzE5NTg4MjAzLDE2NzQ5MDUxMzAsMTcwMj
+MxNjI4XX0=
 -->
