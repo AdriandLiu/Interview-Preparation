@@ -37,16 +37,15 @@ units = avg(# of nodes in the input layer, # of nodes in the output layer)
 in which, 11 predictors and 1 response variable => (11+1)/2 => 6
 
 #### Choose activation function:
-* Both **sigmoid and tanh functions are not suitable for hidden layers** because if z is very large or very small, the slope of the function becomes very small which slows down the gradient descent which can be visualized in the below video. **Rectified linear unit (relu) is a preferred choice for all hidden layers** because its derivative is 1 as long as z is positive and 0 when z is negative. In some cases, **leaky rely can be used just to avoid exact zero derivatives (dead neurons).**
+* Both **sigmoid (kill gradients; slow converage (vanishing gradient); ok in the last layer) and tanh functions are not suitable for hidden layers *(and avoid them)*** because if z is very large or very small, the slope of the function becomes very small which slows down the gradient descent which can be visualized in the below video. 
+* **Rectified linear unit (relu) is a preferred choice for !!*all hidden layers*!!** because its derivative is 1 as long as z is positive and 0 when z is negative. In some cases, **leaky rely can be used just to avoid exact zero derivatives (dead neurons but avoid overfitting).**
+* **Softmax:** Use in **output layer** for classification In the case of multiclass specification, the actual class you have predicted will assemble in a value close to 1. And all other classes are assembled in values close to 0
+* **Linear:** Use in **output layer** for regression
 
-* If you have data which in the negative range, **tanh** might be better
-* **Softmax:** In the case of multiclass specification, the actual class you have predicted will assemble in a value close to 1. And all other classes are assembled in values close to 0
-* 
-
-
-
-* rectifier (only in hidden) or softmax for hidden layer
-* sigmoid for output layer
+#### Gradient vanishing
+Certain activation functions, like the sigmoid function, **squishes a large input space into a small input space between 0 and 1. Therefore, a large change in the input of the sigmoid function will cause a small change in the output.** Hence, the derivative becomes small.
+![](./pics/sigmoid&dev.png)
+when n hidden layers use an activation like the sigmoid function, n small derivatives are multiplied together. Thus, **the gradient decreases exponentially as we propagate down to the initial layers.**
 
 #### Sigmoid vs Softmax
 |Softmax Function|	Sigmoid Function|
