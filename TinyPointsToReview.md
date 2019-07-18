@@ -44,7 +44,7 @@ in which, 11 predictors and 1 response variable => (11+1)/2 => 6
 * **Linear:** Use in **output layer** for regression
 
 #### Loss Functions:
-Cross-Entropy: Classification the decision boundary in a classification task is large (in comparison with regression); while MSE doesn’t punish misclassifications enough but is the right loss for regression, where the distance between two values that can be predicted is small.
+Cross-Entropy: Classification the decision boundary in a classification task is large (in comparison with regression)
 
 MSE: Regression
 
@@ -60,6 +60,12 @@ when n hidden layers use an activation like the sigmoid function, n small deriva
 |The probabilities sum will be 1	| The probabilities sum need not be 1|
 |Used in the different layers of neural networks| Used as activation function while building neural networks|
 |The high value will have the higher probability than other values|The high value will have the high probability but not the higher probability|
+
+
+#### One-hot encoding in classifier
+
+QUESTION: WHY ONE-HOT IN CLASSIFIER
+MSE VS CROSS-ENTROPY
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMjMxNjI4XX0=
+eyJoaXN0b3J5IjpbMTY3NDkwNTEzMCwxNzAyMzE2MjhdfQ==
 -->
