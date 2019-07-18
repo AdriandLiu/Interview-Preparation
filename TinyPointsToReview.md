@@ -18,10 +18,18 @@ The Dummy variable trap is a scenario where there are attributes which are highl
 ![](./pics/ANN_training_step.png)
 
 ## Activation Functions:
-#### Rectifier
+
+![](./pics/activation functions.png)
+
+#### Rectifier (“I want to see only what I am looking for”)
 ![](./pics/rectifier.png)
 #### Sigmoid
 ![](./pics/sigmoid.png)
+#### Softmax (Also known as “give-me-the-probability-distribution” function)
+##### Example
+![](./pics/softmax example.png)
+##### Formula
+![](./pics/softmax formula.png)
 
 ## Keras 
 #### Dense(): Choose number of nodes in the hidden layer
@@ -29,13 +37,21 @@ units = avg(# of nodes in the input layer, # of nodes in the output layer)
 in which, 11 predictors and 1 response variable => (11+1)/2 => 6
 
 #### Choose activation function:
-* rectifier for hidden layer
+* Both **sigmoid and tanh functions are not suitable for hidden layers** because if z is very large or very small, the slope of the function becomes very small which slows down the gradient descent which can be visualized in the below video. **Rectified linear unit (relu) is a preferred choice for all hidden layers** because its derivative is 1 as long as z is positive and 0 when z is negative. In some cases, **leaky rely can be used just to avoid exact zero derivatives (dead neurons).**
+
+* If you have data which in the negative range, **tanh** might be better
+* **Softmax:** In the case of multiclass specification, the actual class you have predicted will assemble in a value close to 1. And all other classes are assembled in values close to 0
+* 
+
+
+
+* rectifier (only in hidden) or softmax for hidden layer
 * sigmoid for output layer
 
 #### Sigmoid vs Softmax
 |Softmax Function|	Sigmoid Function|
 |-------|----------|
-|Used for multi-classification in logistic regression model|Used for binary classification in logistic regression model|
+|Used for **multi-classification** logistic regression model|Used for **binary classification** in logistic regression model|
 |The probabilities sum will be 1	| The probabilities sum need not be 1|
 |Used in the different layers of neural networks| Used as activation function while building neural networks|
 |The high value will have the higher probability than other values|The high value will have the high probability but not the higher probability|
