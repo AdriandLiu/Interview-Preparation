@@ -46,7 +46,7 @@ in which, 11 predictors and 1 response variable => (11+1)/2 => 6
 #### Loss Functions:
 Cross-Entropy: Classification the decision boundary in a classification task is large (in comparison with regression); while MSE doesn’t punish misclassifications enough but is the right loss for regression, where the distance between two values that can be predicted is small.
 
-MSE ()
+MSE: Regression
 
 #### Gradient vanishing
 Certain activation functions, like the sigmoid function, **squishes a large input space into a small input space between 0 and 1. Therefore, a large change in the input of the sigmoid function will cause a small change in the output.** Hence, the derivative becomes small. For instance, *first layer will map a large input region to a smaller output region, which will be mapped to an even smaller region by the second layer, which will be mapped to an even smaller region by the third layer and so on. As a result, even a large change in the parameters of the first layer doesn't change the output much.*
@@ -61,5 +61,5 @@ when n hidden layers use an activation like the sigmoid function, n small deriva
 |Used in the different layers of neural networks| Used as activation function while building neural networks|
 |The high value will have the higher probability than other values|The high value will have the high probability but not the higher probability|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE5Mjg1OTcwXX0=
+eyJoaXN0b3J5IjpbMTcwMjMxNjI4XX0=
 -->
