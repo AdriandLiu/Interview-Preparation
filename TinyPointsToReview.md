@@ -11,7 +11,9 @@
 ## Dummy Variables (one-hot encoding): One-hot encoding must apply in classifier
 [Use of Dummy Variables](https://www.moresteam.com/WhitePapers/download/dummy-variables.pdf)
 
-### Why one-hot encoding in classi
+### Why one-hot encoding in classifier
+
+
 
 ### Dummy Variable Trap: 
 The Dummy variable trap is a scenario where there are attributes which are highly correlated (Multicollinear) and one variable predicts the value of others. When we use one hot encoding for handling the categorical data, then one dummy variable (attribute) can be predicted with the help of other dummy variables. Hence, one dummy variable is highly correlated with other dummy variables. Using all dummy variables for regression models lead to dummy variable trap. **So, the regression models should be designed excluding one dummy variable.** (say, we have three, remove one of them)
@@ -69,6 +71,6 @@ when n hidden layers use an activation like the sigmoid function, n small deriva
 QUESTION: WHY ONE-HOT IN CLASSIFIER
 MSE VS CROSS-ENTROPY
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ4OTcxOTMzLDcxOTU4ODIwMywxNjc0OT
-A1MTMwLDE3MDIzMTYyOF19
+eyJoaXN0b3J5IjpbLTc3Mjc5NDQyMyw3MTk1ODgyMDMsMTY3ND
+kwNTEzMCwxNzAyMzE2MjhdfQ==
 -->
