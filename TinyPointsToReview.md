@@ -9,7 +9,7 @@
 * TensorFlow is somewhat faster than Keras
 
 ## Encoder
-[]([https://maxhalford.github.io/blog/target-encoding-done-the-right-way/](https://maxhalford.github.io/blog/target-encoding-done-the-right-way/))
+[Mupltiple encoding techniques Intro]([https://maxhalford.github.io/blog/target-encoding-done-the-right-way/](https://maxhalford.github.io/blog/target-encoding-done-the-right-way/))
 
 ### Label encoding
 
@@ -113,7 +113,7 @@ when n hidden layers use an activation like the sigmoid function, n small deriva
 QUESTION: WHY ONE-HOT IN CLASSIFIER
 MSE VS CROSS-ENTROPY
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDUwNDc3MjcsLTM3MTM4MzMyMSwtMj
-g1OTMyMDAwLC03NzI3OTQ0MjMsNzE5NTg4MjAzLDE2NzQ5MDUx
-MzAsMTcwMjMxNjI4XX0=
+eyJoaXN0b3J5IjpbMTU1NDk1NTE5MywtMzcxMzgzMzIxLC0yOD
+U5MzIwMDAsLTc3Mjc5NDQyMyw3MTk1ODgyMDMsMTY3NDkwNTEz
+MCwxNzAyMzE2MjhdfQ==
 -->
