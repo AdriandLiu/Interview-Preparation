@@ -23,9 +23,13 @@ Label encoding is simply converting each value in a column to a number, usually 
 DISADVANTAGE:
 The numeric values can be “misinterpreted” by the algorithms. For example, the value of 0 is obviously less than the value of 4 but does that really correspond to the data set in real life? Does a wagon have “4X” more weight in our calculation than the convertible? I don't think so.
 
-###
+### One-hot encoding
+
+convert each category value into a new column and assigns a 1 or 0 (True/False) value to the column. This has the **benefit** of not weighting a value improperly but does have the downside of adding more columns to the data set.
 
 ### Target encoding
+[Target encoding]([http://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-munging/target-encoding.html](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-munging/target-encoding.html)) 
+
 
 
 
@@ -93,7 +97,7 @@ when n hidden layers use an activation like the sigmoid function, n small deriva
 QUESTION: WHY ONE-HOT IN CLASSIFIER
 MSE VS CROSS-ENTROPY
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTgzODE3MzgsLTM3MTM4MzMyMSwtMj
-g1OTMyMDAwLC03NzI3OTQ0MjMsNzE5NTg4MjAzLDE2NzQ5MDUx
-MzAsMTcwMjMxNjI4XX0=
+eyJoaXN0b3J5IjpbMTA2MzIyNzE4LC0zNzEzODMzMjEsLTI4NT
+kzMjAwMCwtNzcyNzk0NDIzLDcxOTU4ODIwMywxNjc0OTA1MTMw
+LDE3MDIzMTYyOF19
 -->
