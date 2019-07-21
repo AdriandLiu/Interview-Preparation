@@ -40,23 +40,12 @@ For example, target encoding for  `addr_state`  could be:
 |-------------|--------------|
 |AK |0.1476998|
 |AL | 0.2091603|
-AR|
+AR|0.1920290
+AZ|0.1740675
+CA|0.1780015
+CO|0.1433022
 
-0.1920290
-
-AZ
-
-0.1740675
-
-CA
-
-0.1780015
-
-CO
-
-0.1433022
-
-Instead of using state as a predictor in our model, we could use the target encoding of state.
+**Instead of using state as a predictor in our model, we could use the target encoding of state.**
 
 
 ## Dummy Variables (one-hot encoding): One-hot encoding must apply in classifier
@@ -123,7 +112,7 @@ when n hidden layers use an activation like the sigmoid function, n small deriva
 QUESTION: WHY ONE-HOT IN CLASSIFIER
 MSE VS CROSS-ENTROPY
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MDY4Mzc0OSwtMzcxMzgzMzIxLC0yOD
+eyJoaXN0b3J5IjpbMTEyNTI3ODc0MSwtMzcxMzgzMzIxLC0yOD
 U5MzIwMDAsLTc3Mjc5NDQyMyw3MTk1ODgyMDMsMTY3NDkwNTEz
 MCwxNzAyMzE2MjhdfQ==
 -->
