@@ -30,7 +30,33 @@ convert each category value into a new column and assigns a 1 or 0 (True/False) 
 ### Target encoding
 [Target encoding]([http://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-munging/target-encoding.html](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-munging/target-encoding.html)) 
 
+Target encoding is the process of replacing a categorical value with the mean of the target variable. In this example, we will be trying to predict  `bad_loan`  using our cleaned lending club data:  [https://raw.githubusercontent.com/h2oai/app-consumer-loan/master/data/loan.csv](https://raw.githubusercontent.com/h2oai/app-consumer-loan/master/data/loan.csv).
 
+One of the predictors is  `addr_state`, a categorical column with 50 unique values. To perform target encoding on  `addr_state`, we will calculate the average of  `bad_loan`  per state (since  `bad_loan`  is binomial, this will translate to the proportion of records with  `bad_loan  =  1`).
+
+For example, target encoding for  `addr_state`  could be:
+
+|addr_state |average bad_loan|
+|-------------|--------------|
+|AK |0.1476998|
+|AL | 0.2091603|
+AR|
+
+0.1920290
+
+AZ
+
+0.1740675
+
+CA
+
+0.1780015
+
+CO
+
+0.1433022
+
+Instead of using state as a predictor in our model, we could use the target encoding of state.
 
 
 ## Dummy Variables (one-hot encoding): One-hot encoding must apply in classifier
@@ -97,7 +123,7 @@ when n hidden layers use an activation like the sigmoid function, n small deriva
 QUESTION: WHY ONE-HOT IN CLASSIFIER
 MSE VS CROSS-ENTROPY
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2MzIyNzE4LC0zNzEzODMzMjEsLTI4NT
-kzMjAwMCwtNzcyNzk0NDIzLDcxOTU4ODIwMywxNjc0OTA1MTMw
-LDE3MDIzMTYyOF19
+eyJoaXN0b3J5IjpbLTU4MDY4Mzc0OSwtMzcxMzgzMzIxLC0yOD
+U5MzIwMDAsLTc3Mjc5NDQyMyw3MTk1ODgyMDMsMTY3NDkwNTEz
+MCwxNzAyMzE2MjhdfQ==
 -->
