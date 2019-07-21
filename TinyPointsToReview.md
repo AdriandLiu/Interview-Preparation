@@ -18,6 +18,9 @@ Label encoding is simply converting each value in a column to a number, usually 
 -   sedan -> 3
 -   wagon -> 4
 
+DISADVANTAGE:
+The numeric values can be “misinterpreted” by the algorithms. For example, the value of 0 is obviously less than the value of 4 but does that really correspond to the data set in real life? Does a wagon have “4X” more weight in our calculation than the convertible? I don't think so.
+
 
 ## Dummy Variables (one-hot encoding): One-hot encoding must apply in classifier
 [Use of Dummy Variables](https://www.moresteam.com/WhitePapers/download/dummy-variables.pdf)
@@ -83,6 +86,7 @@ when n hidden layers use an activation like the sigmoid function, n small deriva
 QUESTION: WHY ONE-HOT IN CLASSIFIER
 MSE VS CROSS-ENTROPY
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NTkzMjAwMCwtNzcyNzk0NDIzLDcxOT
-U4ODIwMywxNjc0OTA1MTMwLDE3MDIzMTYyOF19
+eyJoaXN0b3J5IjpbLTM3MTM4MzMyMSwtMjg1OTMyMDAwLC03Nz
+I3OTQ0MjMsNzE5NTg4MjAzLDE2NzQ5MDUxMzAsMTcwMjMxNjI4
+XX0=
 -->
