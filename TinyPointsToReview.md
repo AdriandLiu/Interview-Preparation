@@ -8,7 +8,9 @@
 * Keras is a simple, high-level neural networks library, written in Python that works as a wrapper to Tensorflow[1] or Theano[2] . Its easy to learn and use.Using Keras is like working with Logo blocks. It was built so that people can do quicks POC’s and experiments before launching into full scale build process
 * TensorFlow is somewhat faster than Keras
 
-## Label Encoding
+## Encoder
+
+### Label encoding
 
 Label encoding is simply converting each value in a column to a number, usually from test to numerical. For example, the  `body_style`  column contains 5 different values. We could choose to encode it like this:
 
@@ -20,6 +22,11 @@ Label encoding is simply converting each value in a column to a number, usually 
 
 DISADVANTAGE:
 The numeric values can be “misinterpreted” by the algorithms. For example, the value of 0 is obviously less than the value of 4 but does that really correspond to the data set in real life? Does a wagon have “4X” more weight in our calculation than the convertible? I don't think so.
+
+###
+
+### Target encoding
+
 
 
 ## Dummy Variables (one-hot encoding): One-hot encoding must apply in classifier
@@ -86,7 +93,7 @@ when n hidden layers use an activation like the sigmoid function, n small deriva
 QUESTION: WHY ONE-HOT IN CLASSIFIER
 MSE VS CROSS-ENTROPY
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MTM4MzMyMSwtMjg1OTMyMDAwLC03Nz
-I3OTQ0MjMsNzE5NTg4MjAzLDE2NzQ5MDUxMzAsMTcwMjMxNjI4
-XX0=
+eyJoaXN0b3J5IjpbLTEyNTgzODE3MzgsLTM3MTM4MzMyMSwtMj
+g1OTMyMDAwLC03NzI3OTQ0MjMsNzE5NTg4MjAzLDE2NzQ5MDUx
+MzAsMTcwMjMxNjI4XX0=
 -->
