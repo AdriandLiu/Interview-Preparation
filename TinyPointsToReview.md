@@ -8,8 +8,10 @@
 * Keras is a simple, high-level neural networks library, written in Python that works as a wrapper to Tensorflow[1] or Theano[2] . Its easy to learn and use.Using Keras is like working with Logo blocks. It was built so that people can do quicks POC’s and experiments before launching into full scale build process
 * TensorFlow is somewhat faster than Keras
 
-## Dummy Variables (one-hot encoding)
+## Dummy Variables (one-hot encoding): One-hot encoding must apply in classifier
 [Use of Dummy Variables](https://www.moresteam.com/WhitePapers/download/dummy-variables.pdf)
+
+### Why one-hot encoding in classi
 
 ### Dummy Variable Trap: 
 The Dummy variable trap is a scenario where there are attributes which are highly correlated (Multicollinear) and one variable predicts the value of others. When we use one hot encoding for handling the categorical data, then one dummy variable (attribute) can be predicted with the help of other dummy variables. Hence, one dummy variable is highly correlated with other dummy variables. Using all dummy variables for regression models lead to dummy variable trap. **So, the regression models should be designed excluding one dummy variable.** (say, we have three, remove one of them)
@@ -67,6 +69,6 @@ when n hidden layers use an activation like the sigmoid function, n small deriva
 QUESTION: WHY ONE-HOT IN CLASSIFIER
 MSE VS CROSS-ENTROPY
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE5NTg4MjAzLDE2NzQ5MDUxMzAsMTcwMj
-MxNjI4XX0=
+eyJoaXN0b3J5IjpbNjQ4OTcxOTMzLDcxOTU4ODIwMywxNjc0OT
+A1MTMwLDE3MDIzMTYyOF19
 -->
