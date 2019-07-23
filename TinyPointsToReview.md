@@ -57,9 +57,11 @@ CO|0.1433022
 [Use of Dummy Variables](https://www.moresteam.com/WhitePapers/download/dummy-variables.pdf)
 
 
-### Why one-hot encoding in classifier
+### Why one-hot encoding in classifier, not label encoding?
 
+Because the **disadvantage of label encoding:** The numeric values can be “misinterpreted” by the algorithms. For example, the value of 0 is obviously less than the value of 4 but does that really correspond to the data set in real life? Does a wagon have “4X” more weight in our calculation than the convertible? I don't think so.
 
+**This has the benefit of not weighting a value improperly but does have the downside of adding more columns to the data set.**
 
 ### Dummy Variable Trap: 
 The Dummy variable trap is a scenario where there are attributes which are highly correlated (Multicollinear) and one variable predicts the value of others. When we use one hot encoding for handling the categorical data, then one dummy variable (attribute) can be predicted with the help of other dummy variables. Hence, one dummy variable is highly correlated with other dummy variables. Using all dummy variables for regression models lead to dummy variable trap. **So, the regression models should be designed excluding one dummy variable.** (say, we have three, remove one of them)
@@ -101,7 +103,8 @@ MSE: Regression
 #### Gradient vanishing
 Certain activation functions, like the sigmoid function, **squishes a large input space into a small input space between 0 and 1. Therefore, a large change in the input of the sigmoid function will cause a small change in the output.** Hence, the derivative becomes small. For instance, *first layer will map a large input region to a smaller output region, which will be mapped to an even smaller region by the second layer, which will be mapped to an even smaller region by the third layer and so on. As a result, even a large change in the parameters of the first layer doesn't change the output much.*
 ![](./pics/sigmoid&dev.png)
-when n hidden layers use an activation like the sigmoid function, n small derivatives are multiplied together. Thus, **the gradient decreases exponentially as we propagate down to the initial layers.**
+when n hidden layers use an activation like the sigmoid function, n smalJackie Chi Kit Cheung
+l derivatives are multiplied together. Thus, **the gradient decreases exponentially as we propagate down to the initial layers.**
 
 #### Sigmoid vs Softmax
 |Softmax Function|	Sigmoid Function|
@@ -117,7 +120,8 @@ when n hidden layers use an activation like the sigmoid function, n small deriva
 QUESTION: WHY ONE-HOT IN CLASSIFIER
 MSE VS CROSS-ENTROPY
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTEwOTIxMjEsMTU1NDk1NTE5MywtMz
-cxMzgzMzIxLC0yODU5MzIwMDAsLTc3Mjc5NDQyMyw3MTk1ODgy
-MDMsMTY3NDkwNTEzMCwxNzAyMzE2MjhdfQ==
+eyJoaXN0b3J5IjpbLTIwNDA2NzIzMTYsLTEwNTEwOTIxMjEsMT
+U1NDk1NTE5MywtMzcxMzgzMzIxLC0yODU5MzIwMDAsLTc3Mjc5
+NDQyMyw3MTk1ODgyMDMsMTY3NDkwNTEzMCwxNzAyMzE2MjhdfQ
+==
 -->
