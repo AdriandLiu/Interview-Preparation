@@ -30,7 +30,7 @@ The first group of five classic encoders can be seen on a continuum of embedding
 <br/>
 
 ***Contrast Encoders***
-The five contrast encoders all have multiple issues that I argue make them **unlikely to be useful for machine learning. They all output one column for each column value. I would avoid them in most cases. Their  [stated intents](http://www.willmcginnis.com/2015/11/29/beyond-one-hot-an-exploration-of-categorical-variables/?source=post_page---------------------------)are below.
+The five contrast encoders all have multiple issues that I argue make them *unlikely to be useful for machine learning*. They all output one column for each column value. I would avoid them in most cases. Their  [stated intents](http://www.willmcginnis.com/2015/11/29/beyond-one-hot-an-exploration-of-categorical-variables/?source=post_page---------------------------)are below.
 
 **_Helmert_** _(reverse)_  — The mean of the dependent variable for a level is compared to the mean of the dependent variable over all previous levels.  
 **_Sum_**  — compares the mean of the dependent variable for a given level to the overall mean of the dependent variable over all the levels.  
@@ -156,7 +156,7 @@ l derivatives are multiplied together. Thus, **the gradient decreases exponentia
 QUESTION: WHY ONE-HOT IN CLASSIFIER
 MSE VS CROSS-ENTROPY
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NTczMjcyNiwtMjA0MDY3MjMxNiwtMT
+eyJoaXN0b3J5IjpbMTg0MDUwNDQxMiwtMjA0MDY3MjMxNiwtMT
 A1MTA5MjEyMSwxNTU0OTU1MTkzLC0zNzEzODMzMjEsLTI4NTkz
 MjAwMCwtNzcyNzk0NDIzLDcxOTU4ODIwMywxNjc0OTA1MTMwLD
 E3MDIzMTYyOF19
