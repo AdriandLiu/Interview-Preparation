@@ -11,9 +11,9 @@
 ## Encoder
 [All encoder methods](https://towardsdatascience.com/smarter-ways-to-encode-categorical-data-for-machine-learning-part-1-of-3-6dca2f71b159) !!! IMPORTANT
 
-Summary:
-## Classic Encoders
+***Summary:***
 
+***Classic Encoders***
 The first group of five classic encoders can be seen on a continuum of embedding information in one column (Ordinal) up to  _k_  columns (OneHot). These are very useful encodings for machine learning practitioners to understand.
 
 **_Ordinal_** — convert string labels to integer values 1 through  _k_. Ordinal.  
@@ -22,8 +22,8 @@ The first group of five classic encoders can be seen on a continuum of embedding
 **_BaseN_** — Ordinal, Binary, or higher encoding. Nominal, ordinal. Doesn’t add much functionality. Probably avoid.  
 **_Hashing_** — Like OneHot but fewer dimensions, some info loss due to collisions. Nominal, ordinal.
 
-## Contrast Encoders
 
+***Contrast Encoders***
 The five contrast encoders all have multiple issues that I argue make them unlikely to be useful for machine learning. They all output one column for each column value. I would avoid them in most cases. Their  [stated intents](http://www.willmcginnis.com/2015/11/29/beyond-one-hot-an-exploration-of-categorical-variables/?source=post_page---------------------------)are below.
 
 **_Helmert_** _(reverse)_  — The mean of the dependent variable for a level is compared to the mean of the dependent variable over all previous levels.  
@@ -31,7 +31,7 @@ The five contrast encoders all have multiple issues that I argue make them unlik
 **_Backward Difference_**  — the mean of the dependent variable for a level is compared with the mean of the dependent variable for the prior level.  
 **_Polynomial_**  — orthogonal polynomial contrasts. The coefficients taken on by polynomial coding for k=4 levels are the linear, quadratic, and cubic trends in the categorical variable.
 
-## Bayesian Encoders
+***Bayesian Encoders***
 
 The Bayesian encoders use information from the dependent variable in their encodings. They output one column and can work well with high cardinality data.
 
@@ -155,8 +155,8 @@ l derivatives are multiplied together. Thus, **the gradient decreases exponentia
 QUESTION: WHY ONE-HOT IN CLASSIFIER
 MSE VS CROSS-ENTROPY
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NjY2ODc4LC0yMDQwNjcyMzE2LC0xMD
-UxMDkyMTIxLDE1NTQ5NTUxOTMsLTM3MTM4MzMyMSwtMjg1OTMy
-MDAwLC03NzI3OTQ0MjMsNzE5NTg4MjAzLDE2NzQ5MDUxMzAsMT
-cwMjMxNjI4XX0=
+eyJoaXN0b3J5IjpbMTE5NjQyOTQ1NCwtMjA0MDY3MjMxNiwtMT
+A1MTA5MjEyMSwxNTU0OTU1MTkzLC0zNzEzODMzMjEsLTI4NTkz
+MjAwMCwtNzcyNzk0NDIzLDcxOTU4ODIwMywxNjc0OTA1MTMwLD
+E3MDIzMTYyOF19
 -->
