@@ -30,7 +30,7 @@ The first group of five classic encoders can be seen on a continuum of embedding
 <br/>
 
 ***Contrast Encoders***
-The five contrast encoders all have multiple issues that I argue make them unlikely to be useful for machine learning. They all output one column for each column value. I would avoid them in most cases. Their  [stated intents](http://www.willmcginnis.com/2015/11/29/beyond-one-hot-an-exploration-of-categorical-variables/?source=post_page---------------------------)are below.
+The five contrast encoders all have multiple issues that I argue make them **unlikely to be useful for machine learning. They all output one column for each column value. I would avoid them in most cases. Their  [stated intents](http://www.willmcginnis.com/2015/11/29/beyond-one-hot-an-exploration-of-categorical-variables/?source=post_page---------------------------)are below.
 
 **_Helmert_** _(reverse)_  — The mean of the dependent variable for a level is compared to the mean of the dependent variable over all previous levels.  
 **_Sum_**  — compares the mean of the dependent variable for a given level to the overall mean of the dependent variable over all the levels.  
@@ -48,6 +48,8 @@ The Bayesian encoders use information from the dependent variable in their encod
 **_WeightOfEvidence_**  — added in v1.3. Not documented in the  [docs](http://contrib.scikit-learn.org/categorical-encoding/?source=post_page---------------------------)  as of April 11, 2019. The method is explained in  [this post](https://www.listendata.com/2015/03/weight-of-evidence-woe-and-information.html?source=post_page---------------------------).  
 **_James-Stein_**  — forthcoming in v1.4. Described in the code  [here](https://github.com/scikit-learn-contrib/categorical-encoding/blob/master/category_encoders/james_stein.py?source=post_page---------------------------).  
 **_M-estimator_** — forthcoming in v1.4. Described in the code  [here](https://github.com/scikit-learn-contrib/categorical-encoding/blob/master/category_encoders/m_estimate.py?source=post_page---------------------------). Simplified target encoder.
+
+<br/>
 
 ### Label encoding
 
@@ -154,8 +156,8 @@ l derivatives are multiplied together. Thus, **the gradient decreases exponentia
 QUESTION: WHY ONE-HOT IN CLASSIFIER
 MSE VS CROSS-ENTROPY
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODI2MzM4NDksLTIwNDA2NzIzMTYsLT
-EwNTEwOTIxMjEsMTU1NDk1NTE5MywtMzcxMzgzMzIxLC0yODU5
-MzIwMDAsLTc3Mjc5NDQyMyw3MTk1ODgyMDMsMTY3NDkwNTEzMC
-wxNzAyMzE2MjhdfQ==
+eyJoaXN0b3J5IjpbMTQ5NTczMjcyNiwtMjA0MDY3MjMxNiwtMT
+A1MTA5MjEyMSwxNTU0OTU1MTkzLC0zNzEzODMzMjEsLTI4NTkz
+MjAwMCwtNzcyNzk0NDIzLDcxOTU4ODIwMywxNjc0OTA1MTMwLD
+E3MDIzMTYyOF19
 -->
