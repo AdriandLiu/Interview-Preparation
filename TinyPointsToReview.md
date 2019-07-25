@@ -22,6 +22,7 @@ The first group of five classic encoders can be seen on a continuum of embedding
 **_BaseN_** — Ordinal, Binary, or higher encoding. Nominal, ordinal. Doesn’t add much functionality. Probably avoid.  
 **_Hashing_** — Like OneHot but fewer dimensions, some info loss due to collisions. Nominal, ordinal.
 
+<br/>
 
 ***Contrast Encoders***
 The five contrast encoders all have multiple issues that I argue make them unlikely to be useful for machine learning. They all output one column for each column value. I would avoid them in most cases. Their  [stated intents](http://www.willmcginnis.com/2015/11/29/beyond-one-hot-an-exploration-of-categorical-variables/?source=post_page---------------------------)are below.
@@ -30,6 +31,8 @@ The five contrast encoders all have multiple issues that I argue make them unlik
 **_Sum_**  — compares the mean of the dependent variable for a given level to the overall mean of the dependent variable over all the levels.  
 **_Backward Difference_**  — the mean of the dependent variable for a level is compared with the mean of the dependent variable for the prior level.  
 **_Polynomial_**  — orthogonal polynomial contrasts. The coefficients taken on by polynomial coding for k=4 levels are the linear, quadratic, and cubic trends in the categorical variable.
+
+<br/>
 
 ***Bayesian Encoders***
 
@@ -155,8 +158,8 @@ l derivatives are multiplied together. Thus, **the gradient decreases exponentia
 QUESTION: WHY ONE-HOT IN CLASSIFIER
 MSE VS CROSS-ENTROPY
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5NjQyOTQ1NCwtMjA0MDY3MjMxNiwtMT
-A1MTA5MjEyMSwxNTU0OTU1MTkzLC0zNzEzODMzMjEsLTI4NTkz
-MjAwMCwtNzcyNzk0NDIzLDcxOTU4ODIwMywxNjc0OTA1MTMwLD
-E3MDIzMTYyOF19
+eyJoaXN0b3J5IjpbLTEzNzU3MTk5MzAsLTIwNDA2NzIzMTYsLT
+EwNTEwOTIxMjEsMTU1NDk1NTE5MywtMzcxMzgzMzIxLC0yODU5
+MzIwMDAsLTc3Mjc5NDQyMyw3MTk1ODgyMDMsMTY3NDkwNTEzMC
+wxNzAyMzE2MjhdfQ==
 -->
