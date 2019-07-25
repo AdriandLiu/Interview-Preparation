@@ -160,17 +160,17 @@ Def: While training the model, you can observe **some high** accuracy and **some
 
 During training, some number of layer outputs are randomly ignored or “_dropped out_.”
 [Where should I place dropout layers in a neural network?](https://stats.stackexchange.com/questions/240305/where-should-i-place-dropout-layers-in-a-neural-network)
-In the original paper that proposed dropout layers, by  [Hinton (2012)](https://arxiv.org/pdf/1207.0580.pdf), dropout (with p=0.5) was used on each of the fully connected (dense) layers before the output; it was not used on the convolutional layers. This became the most commonly used configuration.
+In the original paper that proposed dropout layers, by  [Hinton (2012)](https://arxiv.org/pdf/1207.0580.pdf), dropout (with p=0.5) was used on each of the **fully connected (dense) layers** before the output; **it was not used on the convolutional layers**. This became the most commonly used configuration.
 
-[More recent research](http://mipal.snu.ac.kr/images/1/16/Dropout_ACCV2016.pdf)  has shown some value in applying dropout also to convolutional layers, although at much lower levels: p=0.1 or 0.2. Dropout was used after the activation function of each convolutional layer: CONV->RELU->DROP.
+[More recent research](http://mipal.snu.ac.kr/images/1/16/Dropout_ACCV2016.pdf)  has shown some value in applying dropout also to convolutional layers, although at much lower levels: p=0.1 or 0.2. **Dropout was used after the activation function of each convolutional layer: CONV->RELU->DROP.**
 
 
 #### One-hot encoding in classifier
 
 MSE VS CROSS-ENTROPY
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzQ5MjYzNywtMjEyOTA0NjE4MCwxOD
-QwNTA0NDEyLC0yMDQwNjcyMzE2LC0xMDUxMDkyMTIxLDE1NTQ5
-NTUxOTMsLTM3MTM4MzMyMSwtMjg1OTMyMDAwLC03NzI3OTQ0Mj
-MsNzE5NTg4MjAzLDE2NzQ5MDUxMzAsMTcwMjMxNjI4XX0=
+eyJoaXN0b3J5IjpbMjc3MDQzMjM1LC0yMTI5MDQ2MTgwLDE4ND
+A1MDQ0MTIsLTIwNDA2NzIzMTYsLTEwNTEwOTIxMjEsMTU1NDk1
+NTE5MywtMzcxMzgzMzIxLC0yODU5MzIwMDAsLTc3Mjc5NDQyMy
+w3MTk1ODgyMDMsMTY3NDkwNTEzMCwxNzAyMzE2MjhdfQ==
 -->
