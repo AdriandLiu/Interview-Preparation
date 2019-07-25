@@ -153,14 +153,14 @@ l derivatives are multiplied together. Thus, **the gradient decreases exponentia
 
 ### Overfitting
 
-While training the model, you can observe **some high** accuracy and **some low** accuracy so you have **high variance**
+Def: While training the model, you can observe **some high** accuracy and **some low** accuracy so you have **high variance**
 
 #### One-hot encoding in classifier
 
 MSE VS CROSS-ENTROPY
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMjExNzI0NSwxODQwNTA0NDEyLC0yMD
-QwNjcyMzE2LC0xMDUxMDkyMTIxLDE1NTQ5NTUxOTMsLTM3MTM4
-MzMyMSwtMjg1OTMyMDAwLC03NzI3OTQ0MjMsNzE5NTg4MjAzLD
-E2NzQ5MDUxMzAsMTcwMjMxNjI4XX0=
+eyJoaXN0b3J5IjpbLTIxMjkwNDYxODAsMTg0MDUwNDQxMiwtMj
+A0MDY3MjMxNiwtMTA1MTA5MjEyMSwxNTU0OTU1MTkzLC0zNzEz
+ODMzMjEsLTI4NTkzMjAwMCwtNzcyNzk0NDIzLDcxOTU4ODIwMy
+wxNjc0OTA1MTMwLDE3MDIzMTYyOF19
 -->
