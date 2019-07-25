@@ -151,13 +151,16 @@ l derivatives are multiplied together. Thus, **the gradient decreases exponentia
 |The high value will have the higher probability than other values|The high value will have the high probability but not the higher probability|
 
 
+### Overfitting
+
+
+
 #### One-hot encoding in classifier
 
-QUESTION: WHY ONE-HOT IN CLASSIFIER
 MSE VS CROSS-ENTROPY
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MDUwNDQxMiwtMjA0MDY3MjMxNiwtMT
-A1MTA5MjEyMSwxNTU0OTU1MTkzLC0zNzEzODMzMjEsLTI4NTkz
-MjAwMCwtNzcyNzk0NDIzLDcxOTU4ODIwMywxNjc0OTA1MTMwLD
-E3MDIzMTYyOF19
+eyJoaXN0b3J5IjpbODIwMTMyNzEyLDE4NDA1MDQ0MTIsLTIwND
+A2NzIzMTYsLTEwNTEwOTIxMjEsMTU1NDk1NTE5MywtMzcxMzgz
+MzIxLC0yODU5MzIwMDAsLTc3Mjc5NDQyMyw3MTk1ODgyMDMsMT
+Y3NDkwNTEzMCwxNzAyMzE2MjhdfQ==
 -->
