@@ -21,3 +21,128 @@ Few ideas on picking a value for ‘K’
 One way to select the cross-validation dataset from the training dataset. Take the small portion from the training dataset and call it a validation dataset, and then use the same to evaluate different possible values of K. This way we are going to predict the label for every instance in the validation set using with K equals to 1, K equals to 2, K equals to 3.. and then we look at what value of K gives us the best performance on the validation set and then we can take that value and use that as the final setting of our algorithm so we are minimizing the validation error .
 5) In general, practice, choosing the value of **k is k = sqrt(N) where N stands for the number of samples in your training dataset.**
 6) Try and **keep the value of k odd** in order to avoid confusion between two classes of data
+
+
+## Expected Value or Expectation vs Avg or Mean
+
+The concept of expectation value or expected value may be understood from the following example. Let 𝑋
+X
+ represent the outcome of a roll of an unbiased six-sided die. The possible values for 𝑋
+X
+ are 1, 2, 3, 4, 5, and 6, each having the probability of occurrence of 1/6. The expectation value (or expected value) of 𝑋
+X
+is then given by
+
+(𝑋)expected=1(1/6)+2⋅(1/6)+3⋅(1/6)+4⋅(1/6)+5⋅(1/6)+6⋅(1/6)=21/6=3.5
+(
+X
+)
+expected
+=
+1
+(
+1
+/
+6
+)
++
+2
+⋅
+(
+1
+/
+6
+)
++
+3
+⋅
+(
+1
+/
+6
+)
++
+4
+⋅
+(
+1
+/
+6
+)
++
+5
+⋅
+(
+1
+/
+6
+)
++
+6
+⋅
+(
+1
+/
+6
+)
+=
+21
+/
+6
+=
+3.5
+
+Suppose that in a sequence of ten rolls of the die, if the outcomes are 5, 2, 6, 2, 2, 1, 2, 3, 6, 1, then the average (arithmetic mean) of the results is given by
+
+(𝑋)average=(5+2+6+2+2+1+2+3+6+1)/10=3.0
+(
+X
+)
+average
+=
+(
+5
++
+2
++
+6
++
+2
++
+2
++
+1
++
+2
++
+3
++
+6
++
+1
+)
+/
+10
+=
+3.0
+
+We say that the average value is 3.0, with the distance of 0.5 from the expectation value of 3.5. If we roll the die 𝑁
+N
+ times, where 𝑁
+N
+is very large, then the average will converge to the expected value, i.e.,(𝑋)average=(𝑋)expected
+(
+X
+)
+average
+=
+(
+X
+)
+expected
+. This is evidently because, when 𝑁
+N
+ is very large each possible value of 𝑋
+X
+ (i.e. 1 to 6) will occur with equal probability of 1/6, turning the average to the expectation value.
+
