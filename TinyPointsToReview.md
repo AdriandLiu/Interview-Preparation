@@ -169,9 +169,19 @@ In the original paper that proposed dropout layers, by  [Hinton (2012)](https://
 #### One-hot encoding in classifier
 
 MSE VS CROSS-ENTROPY
+
+
+
+
+
+
+## CNN (Convolutional Neural Networks)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MDc2Njg3NSwtMjEyOTA0NjE4MCwxOD
-QwNTA0NDEyLC0yMDQwNjcyMzE2LC0xMDUxMDkyMTIxLDE1NTQ5
-NTUxOTMsLTM3MTM4MzMyMSwtMjg1OTMyMDAwLC03NzI3OTQ0Mj
-MsNzE5NTg4MjAzLDE2NzQ5MDUxMzAsMTcwMjMxNjI4XX0=
+eyJoaXN0b3J5IjpbMzY0MjU4NTIwLC01NzA3NjY4NzUsLTIxMj
+kwNDYxODAsMTg0MDUwNDQxMiwtMjA0MDY3MjMxNiwtMTA1MTA5
+MjEyMSwxNTU0OTU1MTkzLC0zNzEzODMzMjEsLTI4NTkzMjAwMC
+wtNzcyNzk0NDIzLDcxOTU4ODIwMywxNjc0OTA1MTMwLDE3MDIz
+MTYyOF19
 -->
