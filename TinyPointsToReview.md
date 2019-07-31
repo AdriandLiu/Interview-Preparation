@@ -180,7 +180,7 @@ MSE VS CROSS-ENTROPY
 
 ![](./pics/CNN_procedure.png)
 
-Input Image -> Feature Detector (Kernel or Filter)  = Feature Map (how many pixels of Input pixels match Feature Detector matrix) (make the image smaller) (lose information but force on important features to us)
+Input Image -> Feature Detector (Kernel or Filter)  = **Feature Map** (how many pixels of Input pixels match Feature Detector matrix) (make the image smaller) (lose information but force on important features to us)
 
 ![](./pics/FeatureMap.png)
 
@@ -196,7 +196,7 @@ Once you have decided the size of the filters, as much as the initialization of 
 
 ### Max Pooling
 
-Feature Maps -> Extract the max value in the box (2X2 stride) -> Pooled Feature Map
+**Feature Maps** -> Extract the max value in the box (2X2 stride) -> **Pooled Feature Map**
 
 1. Preserve the information but get rid of large portion of features, which are not important
 2. Redure number of parameter of the finals in neural network
@@ -206,12 +206,13 @@ Feature Maps -> Extract the max value in the box (2X2 stride) -> Pooled Feature 
 
 
 ### Sub-sampling/ Average pooling
-Feature Maps -> Extract the average value in the box (2X2 stride) -> Pooled Feature Map
+**Feature Maps** -> Extract the average value in the box (2X2 stride) -> **Pooled Feature Map**
 
 ### Flattening
-P
+
+**Pooled Feature Map**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMzIwOTE0LC03OTU1NDI2NTMsLTQ2NT
+eyJoaXN0b3J5IjpbNDgzMzM2NzU5LC03OTU1NDI2NTMsLTQ2NT
 YzNjMyNCwyMDg2MjYwOTQyLDEyNTY4MjA4NiwtOTI4NjYzNDE5
 LC0xMjE1Mzg0MzEyLC0xNDk3ODg0NDIxLDE3MjkwMTE0MjksMz
 Y0MjU4NTIwLC01NzA3NjY4NzUsLTIxMjkwNDYxODAsMTg0MDUw
