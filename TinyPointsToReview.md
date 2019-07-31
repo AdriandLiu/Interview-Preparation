@@ -188,9 +188,13 @@ Input Image -> Feature Detector (Kernel or Filter)  = Feature Map (how many pixe
 
 2M libility insurance
 16000 personal belongs
+accidential damage, fire, water 3200
+Water damage + 28
 
+
+218+9%
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMDg1MjQxMCwtMTIxNTM4NDMxMiwtMT
+eyJoaXN0b3J5IjpbLTkyODY2MzQxOSwtMTIxNTM4NDMxMiwtMT
 Q5Nzg4NDQyMSwxNzI5MDExNDI5LDM2NDI1ODUyMCwtNTcwNzY2
 ODc1LC0yMTI5MDQ2MTgwLDE4NDA1MDQ0MTIsLTIwNDA2NzIzMT
 YsLTEwNTEwOTIxMjEsMTU1NDk1NTE5MywtMzcxMzgzMzIxLC0y
