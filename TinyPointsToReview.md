@@ -184,22 +184,19 @@ Input Image -> Feature Detector (Kernel or Filter)  = Feature Map (how many pixe
 
 ![](./pics/FeatureMap.png)
 
-### Feature Maps
+### Feature Detector/ Filter
+Convolutional Neural Networks are (usually) supervised methods for image/object recognition. This means that you need to train the CNN using a set of labelled images: this allows to optimize the weights of its convolutional filters, hence learning the filters shape themselsves, to minimize the error.
 
-2M libility insurance
-16000 personal belongs
-accidential damage, fire, water 3200
-Water damage + 28
+Once you have decided the size of the filters, as much as the initialization of the filters is important to "guide" the learning, you can indeed initialize them to random values, and let the learning do the work.
 
 
 
 
-218+9%
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MDQ2ODE5MywtOTI4NjYzNDE5LC0xMj
-E1Mzg0MzEyLC0xNDk3ODg0NDIxLDE3MjkwMTE0MjksMzY0MjU4
-NTIwLC01NzA3NjY4NzUsLTIxMjkwNDYxODAsMTg0MDUwNDQxMi
-wtMjA0MDY3MjMxNiwtMTA1MTA5MjEyMSwxNTU0OTU1MTkzLC0z
-NzEzODMzMjEsLTI4NTkzMjAwMCwtNzcyNzk0NDIzLDcxOTU4OD
-IwMywxNjc0OTA1MTMwLDE3MDIzMTYyOF19
+eyJoaXN0b3J5IjpbLTE3MTM0NjM1NjAsLTkyODY2MzQxOSwtMT
+IxNTM4NDMxMiwtMTQ5Nzg4NDQyMSwxNzI5MDExNDI5LDM2NDI1
+ODUyMCwtNTcwNzY2ODc1LC0yMTI5MDQ2MTgwLDE4NDA1MDQ0MT
+IsLTIwNDA2NzIzMTYsLTEwNTEwOTIxMjEsMTU1NDk1NTE5Mywt
+MzcxMzgzMzIxLC0yODU5MzIwMDAsLTc3Mjc5NDQyMyw3MTk1OD
+gyMDMsMTY3NDkwNTEzMCwxNzAyMzE2MjhdfQ==
 -->
