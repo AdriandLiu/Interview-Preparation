@@ -423,16 +423,16 @@ Once you have decided the size of the filters, as much as the initialization of 
 
   
 
-**Pooled Feature Map** -> Flattening 
+**Pooled Feature Map** -> Flattening, row by row -> long column -> neural nets
 
-
+![](./pics)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MTkwNDE1OCw0ODMzMzY3NTksLTc5NT
-U0MjY1MywtNDY1NjM2MzI0LDIwODYyNjA5NDIsMTI1NjgyMDg2
-LC05Mjg2NjM0MTksLTEyMTUzODQzMTIsLTE0OTc4ODQ0MjEsMT
-cyOTAxMTQyOSwzNjQyNTg1MjAsLTU3MDc2Njg3NSwtMjEyOTA0
-NjE4MCwxODQwNTA0NDEyLC0yMDQwNjcyMzE2LC0xMDUxMDkyMT
-IxLDE1NTQ5NTUxOTMsLTM3MTM4MzMyMSwtMjg1OTMyMDAwLC03
-NzI3OTQ0MjNdfQ==
+eyJoaXN0b3J5IjpbLTE1MTY1NzkxMTYsNDgzMzM2NzU5LC03OT
+U1NDI2NTMsLTQ2NTYzNjMyNCwyMDg2MjYwOTQyLDEyNTY4MjA4
+NiwtOTI4NjYzNDE5LC0xMjE1Mzg0MzEyLC0xNDk3ODg0NDIxLD
+E3MjkwMTE0MjksMzY0MjU4NTIwLC01NzA3NjY4NzUsLTIxMjkw
+NDYxODAsMTg0MDUwNDQxMiwtMjA0MDY3MjMxNiwtMTA1MTA5Mj
+EyMSwxNTU0OTU1MTkzLC0zNzEzODMzMjEsLTI4NTkzMjAwMCwt
+NzcyNzk0NDIzXX0=
 -->
