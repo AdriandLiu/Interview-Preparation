@@ -182,13 +182,15 @@ MSE VS CROSS-ENTROPY
 
 Input Image -> Feature Detector (Kernel or Filter)  = Feature Map (how many pixels of Input pixels match Feature Detector matrix) (make the image smaller) (lose information but force on important features to us)
 
+![](./pics/FeatureMap.png)
 
+###
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYyMDY0NzcyLC0xNDk3ODg0NDIxLDE3Mj
-kwMTE0MjksMzY0MjU4NTIwLC01NzA3NjY4NzUsLTIxMjkwNDYx
-ODAsMTg0MDUwNDQxMiwtMjA0MDY3MjMxNiwtMTA1MTA5MjEyMS
-wxNTU0OTU1MTkzLC0zNzEzODMzMjEsLTI4NTkzMjAwMCwtNzcy
-Nzk0NDIzLDcxOTU4ODIwMywxNjc0OTA1MTMwLDE3MDIzMTYyOF
-19
+eyJoaXN0b3J5IjpbMTA2NTcxODE5NywtMTQ5Nzg4NDQyMSwxNz
+I5MDExNDI5LDM2NDI1ODUyMCwtNTcwNzY2ODc1LC0yMTI5MDQ2
+MTgwLDE4NDA1MDQ0MTIsLTIwNDA2NzIzMTYsLTEwNTEwOTIxMj
+EsMTU1NDk1NTE5MywtMzcxMzgzMzIxLC0yODU5MzIwMDAsLTc3
+Mjc5NDQyMyw3MTk1ODgyMDMsMTY3NDkwNTEzMCwxNzAyMzE2Mj
+hdfQ==
 -->
