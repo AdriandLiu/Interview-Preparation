@@ -172,16 +172,17 @@ MSE VS CROSS-ENTROPY
 
 
 
-
+#### In softmax classifier, why use exp function to do normalization?
+[Because we use the natural exponential, we hugely increase the probability of the biggest score and decrease the probability of the lower scores when compared with standard normalization. Hence the "max" in softmax.](https://datascience.stackexchange.com/questions/23159/in-softmax-classifier-why-use-exp-function-to-do-normalization)
 
 
 ## CNN (Convolutional Neural Networks)
 
 ![](./pics/CNN_procedure.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyOTAxMTQyOSwzNjQyNTg1MjAsLTU3MD
-c2Njg3NSwtMjEyOTA0NjE4MCwxODQwNTA0NDEyLC0yMDQwNjcy
-MzE2LC0xMDUxMDkyMTIxLDE1NTQ5NTUxOTMsLTM3MTM4MzMyMS
-wtMjg1OTMyMDAwLC03NzI3OTQ0MjMsNzE5NTg4MjAzLDE2NzQ5
-MDUxMzAsMTcwMjMxNjI4XX0=
+eyJoaXN0b3J5IjpbMjgyNzI4MTY3LDE3MjkwMTE0MjksMzY0Mj
+U4NTIwLC01NzA3NjY4NzUsLTIxMjkwNDYxODAsMTg0MDUwNDQx
+MiwtMjA0MDY3MjMxNiwtMTA1MTA5MjEyMSwxNTU0OTU1MTkzLC
+0zNzEzODMzMjEsLTI4NTkzMjAwMCwtNzcyNzk0NDIzLDcxOTU4
+ODIwMywxNjc0OTA1MTMwLDE3MDIzMTYyOF19
 -->
