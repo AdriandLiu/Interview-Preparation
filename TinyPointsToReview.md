@@ -429,10 +429,15 @@ Once you have decided the size of the filters, as much as the initialization of 
 
 Overall Procedure:
 
+![](./pics/OverallProcedure.png)
 
+
+
+
+## Full Connection
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5ODYwMjE5Miw0ODMzMzY3NTksLTc5NT
+eyJoaXN0b3J5IjpbMTgxMzYxMjA5NSw0ODMzMzY3NTksLTc5NT
 U0MjY1MywtNDY1NjM2MzI0LDIwODYyNjA5NDIsMTI1NjgyMDg2
 LC05Mjg2NjM0MTksLTEyMTUzODQzMTIsLTE0OTc4ODQ0MjEsMT
 cyOTAxMTQyOSwzNjQyNTg1MjAsLTU3MDc2Njg3NSwtMjEyOTA0
