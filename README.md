@@ -22,5 +22,5 @@ As title implies. **Answers needed**
 
 Points to keep in mind about Machine Learning and Deep Learning
 <br/>
-Such as, **Standard Scaling, Encoder, Keras related, Loss Functions, Activation Functions, Overfitting Definition. **
+Such as, **Standard Scaling, Encoder, Keras related, Loss Functions, Activation Functions, Overfitting Definition.**
 
