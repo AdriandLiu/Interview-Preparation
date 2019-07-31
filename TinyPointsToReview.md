@@ -180,11 +180,12 @@ MSE VS CROSS-ENTROPY
 
 ![](./pics/CNN_procedure.png)
 
-Input Image -> Feature Detector (Kernel or Filter)  = Feature Map (how many pixels of Input pixels match Feature Detector matrix) (make the image sm)
+Input Image -> Feature Detector (Kernel or Filter)  = Feature Map (how many pixels of Input pixels match Feature Detector matrix) (make the image smaller)
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NDMyODA4OSwtMTQ5Nzg4NDQyMSwxNz
+eyJoaXN0b3J5IjpbLTc5NDYxNDg5NywtMTQ5Nzg4NDQyMSwxNz
 I5MDExNDI5LDM2NDI1ODUyMCwtNTcwNzY2ODc1LC0yMTI5MDQ2
 MTgwLDE4NDA1MDQ0MTIsLTIwNDA2NzIzMTYsLTEwNTEwOTIxMj
 EsMTU1NDk1NTE5MywtMzcxMzgzMzIxLC0yODU5MzIwMDAsLTc3
