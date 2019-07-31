@@ -196,14 +196,19 @@ Once you have decided the size of the filters, as much as the initialization of 
 
 ### Max Pooling
 
-Feature Maps -> Extract the max value in the box -> Pooled Feature Mapx
+Feature Maps -> Extract the max value in the box -> Pooled Feature Map
+
+Preserve the information but 
+
+
+![](./pics/MaxPooling.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ1ODc0MDgyLDIwODYyNjA5NDIsMTI1Nj
-gyMDg2LC05Mjg2NjM0MTksLTEyMTUzODQzMTIsLTE0OTc4ODQ0
-MjEsMTcyOTAxMTQyOSwzNjQyNTg1MjAsLTU3MDc2Njg3NSwtMj
-EyOTA0NjE4MCwxODQwNTA0NDEyLC0yMDQwNjcyMzE2LC0xMDUx
-MDkyMTIxLDE1NTQ5NTUxOTMsLTM3MTM4MzMyMSwtMjg1OTMyMD
-AwLC03NzI3OTQ0MjMsNzE5NTg4MjAzLDE2NzQ5MDUxMzAsMTcw
-MjMxNjI4XX0=
+eyJoaXN0b3J5IjpbLTExNDI1ODI1ODYsMjA4NjI2MDk0MiwxMj
+U2ODIwODYsLTkyODY2MzQxOSwtMTIxNTM4NDMxMiwtMTQ5Nzg4
+NDQyMSwxNzI5MDExNDI5LDM2NDI1ODUyMCwtNTcwNzY2ODc1LC
+0yMTI5MDQ2MTgwLDE4NDA1MDQ0MTIsLTIwNDA2NzIzMTYsLTEw
+NTEwOTIxMjEsMTU1NDk1NTE5MywtMzcxMzgzMzIxLC0yODU5Mz
+IwMDAsLTc3Mjc5NDQyMyw3MTk1ODgyMDMsMTY3NDkwNTEzMCwx
+NzAyMzE2MjhdfQ==
 -->
