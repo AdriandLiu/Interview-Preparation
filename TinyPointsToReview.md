@@ -191,14 +191,18 @@ Once you have decided the size of the filters, as much as the initialization of 
 
 
 
-### ReLU Layer, remove negative value of image
+#### ReLU Layer, remove negative value of image
+
+
+### Max Pooling
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NjgyMDg2LC05Mjg2NjM0MTksLTEyMT
-UzODQzMTIsLTE0OTc4ODQ0MjEsMTcyOTAxMTQyOSwzNjQyNTg1
-MjAsLTU3MDc2Njg3NSwtMjEyOTA0NjE4MCwxODQwNTA0NDEyLC
-0yMDQwNjcyMzE2LC0xMDUxMDkyMTIxLDE1NTQ5NTUxOTMsLTM3
-MTM4MzMyMSwtMjg1OTMyMDAwLC03NzI3OTQ0MjMsNzE5NTg4Mj
-AzLDE2NzQ5MDUxMzAsMTcwMjMxNjI4XX0=
+eyJoaXN0b3J5IjpbMjA4NjI2MDk0MiwxMjU2ODIwODYsLTkyOD
+Y2MzQxOSwtMTIxNTM4NDMxMiwtMTQ5Nzg4NDQyMSwxNzI5MDEx
+NDI5LDM2NDI1ODUyMCwtNTcwNzY2ODc1LC0yMTI5MDQ2MTgwLD
+E4NDA1MDQ0MTIsLTIwNDA2NzIzMTYsLTEwNTEwOTIxMjEsMTU1
+NDk1NTE5MywtMzcxMzgzMzIxLC0yODU5MzIwMDAsLTc3Mjc5ND
+QyMyw3MTk1ODgyMDMsMTY3NDkwNTEzMCwxNzAyMzE2MjhdfQ==
+
 -->
