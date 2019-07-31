@@ -196,19 +196,20 @@ Once you have decided the size of the filters, as much as the initialization of 
 
 ### Max Pooling
 
-Feature Maps -> Extract the max value in the box -> Pooled Feature Map
+Feature Maps -> Extract the max value in the box (2X2 stride) -> Pooled Feature Map
 
 1. Preserve the information but get rid of large portion of features, which are not important
-2. 
+2. Redure number of parameter of the finals in neural network
+3. Avoid overfitting, disregarding the unnecessary information
 
 ![](./pics/MaxPooling.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4Njk5MjEzLDIwODYyNjA5NDIsMTI1Nj
-gyMDg2LC05Mjg2NjM0MTksLTEyMTUzODQzMTIsLTE0OTc4ODQ0
-MjEsMTcyOTAxMTQyOSwzNjQyNTg1MjAsLTU3MDc2Njg3NSwtMj
-EyOTA0NjE4MCwxODQwNTA0NDEyLC0yMDQwNjcyMzE2LC0xMDUx
-MDkyMTIxLDE1NTQ5NTUxOTMsLTM3MTM4MzMyMSwtMjg1OTMyMD
-AwLC03NzI3OTQ0MjMsNzE5NTg4MjAzLDE2NzQ5MDUxMzAsMTcw
-MjMxNjI4XX0=
+eyJoaXN0b3J5IjpbMTE2NjQ3OTI1NSwyMDg2MjYwOTQyLDEyNT
+Y4MjA4NiwtOTI4NjYzNDE5LC0xMjE1Mzg0MzEyLC0xNDk3ODg0
+NDIxLDE3MjkwMTE0MjksMzY0MjU4NTIwLC01NzA3NjY4NzUsLT
+IxMjkwNDYxODAsMTg0MDUwNDQxMiwtMjA0MDY3MjMxNiwtMTA1
+MTA5MjEyMSwxNTU0OTU1MTkzLC0zNzEzODMzMjEsLTI4NTkzMj
+AwMCwtNzcyNzk0NDIzLDcxOTU4ODIwMywxNjc0OTA1MTMwLDE3
+MDIzMTYyOF19
 -->
