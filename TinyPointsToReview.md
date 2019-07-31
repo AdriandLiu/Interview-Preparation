@@ -204,8 +204,12 @@ Feature Maps -> Extract the max value in the box (2X2 stride) -> Pooled Feature 
 
 ![](./pics/MaxPooling.png)
 
+
+### Sub-sampling/ Average pooling
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NjQ3OTI1NSwyMDg2MjYwOTQyLDEyNT
+eyJoaXN0b3J5IjpbLTQ2NTYzNjMyNCwyMDg2MjYwOTQyLDEyNT
 Y4MjA4NiwtOTI4NjYzNDE5LC0xMjE1Mzg0MzEyLC0xNDk3ODg0
 NDIxLDE3MjkwMTE0MjksMzY0MjU4NTIwLC01NzA3NjY4NzUsLT
 IxMjkwNDYxODAsMTg0MDUwNDQxMiwtMjA0MDY3MjMxNiwtMTA1
