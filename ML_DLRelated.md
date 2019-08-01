@@ -439,7 +439,41 @@ Overall Procedure:
 ![](./pics/CatCNN.png)
 
 
-##
+## Softmax & Cross-Entropy
+
+**softmax** 把分类输出标准化成概率分布，**cross-entropy** 刻画预测分类和真实结果之间的相似度。
+
+
+ Cross-Entropy: cost function for classficiation, CNN
+ MSE: Regression
+ Why Cross-Entropy:
+
+Let's say your outcome that you want is one and right now you are at one millionth of one, right?
+
+0.000001.
+
+And then, next time you improve your outcome **from one millionth to one thousandth** and in terms of, if you calculate the squared error, you're just subtracting one from the other, or basically in each case you're calculating the squared error and you'll see that the **squared error** is when you compare one case versus the other, it **didn't change that much**. You didn't improve your network that much when you're looking at the mean squared error. But if you're looking at the **cross-entropy, because you're taking a logarithm,** and then you're **comparing the two, dividing one with the other**, you will see that you have actually **improved your network significantly**. So that jump from one millionth to one thousandth in mean squared error terms will be very low. It will be insignificant and it won't guide your gradient boosting process or your back propagation in the right direction. It will guide it in the right direction but it will be like a very slow guidance, it won't have enough power, whereas if you do through **cross-entropy**, cross-entropy will understand that, oh **even though these are very small adjustments that are just, you know, making a tiny change in absolute terms, in relative terms, it's a huge improvement, and we're definitely going in the right direction**, let's keep going that way.
+
+ ![](./pics/MSEcsCrossEntropy.png)
+
+
+
+### Practical Notes
+
+Use ImageDataGenerator() from Keras when there are not much images. 
+*It will create many batches of our images, and in each batch it will apply some random transformations on a random selection of our images, like rotating them, flipping them, shifting them, or even shearing them, and eventually what we'll get during the training is many more diverse images inside these batches, and therefore a lot more material to train.*
+
+Because the transformations
+
+are random transformations,
+
+well our model will never find
+
+the same picture across the batches.
+
+So all this image augmentation trick
+
+can only reduce overfitting.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyODY0NjYzOSwxODEzNjEyMDk1XX0=
+eyJoaXN0b3J5IjpbOTA1NTM1NTQzLDE4MTM2MTIwOTVdfQ==
 -->
