@@ -463,17 +463,9 @@ And then, next time you improve your outcome **from one millionth to one thousan
 Use ImageDataGenerator() from Keras when there are not much images. 
 *It will create many batches of our images, and in each batch it will apply some random transformations on a random selection of our images, like rotating them, flipping them, shifting them, or even shearing them, and eventually what we'll get during the training is many more diverse images inside these batches, and therefore a lot more material to train.*
 
-Because the transformations
+Because the transformations are random transformations, well our model will never find the same picture across the batches. So **all this image augmentation trick can only reduce overfitting.**
 
-are random transformations,
-
-well our model will never find
-
-the same picture across the batches.
-
-So all this image augmentation trick
-
-can only reduce overfitting.
+In summary, ***image augmentation is a technique that allows us to enrich our data set, our data set, without adding more images and therefore that allows us to get good performance results with little or no overfitting, even with a small amount of images.***
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA1NTM1NTQzLDE4MTM2MTIwOTVdfQ==
+eyJoaXN0b3J5IjpbNTc5Nzc1MTg3LDE4MTM2MTIwOTVdfQ==
 -->
