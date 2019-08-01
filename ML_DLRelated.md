@@ -454,7 +454,7 @@ Let's say your outcome that you want is one and right now you are at one million
 
 And then, next time you improve your outcome **from one millionth to one thousandth** and in terms of, if you calculate the squared error, you're just subtracting one from the other, or basically in each case you're calculating the squared error and you'll see that the **squared error** is when you compare one case versus the other, it **didn't change that much**. You didn't improve your network that much when you're looking at the mean squared error. But if you're looking at the **cross-entropy, because you're taking a logarithm,** and then you're **comparing the two, dividing one with the other**, you will see that you have actually **improved your network significantly**. So that jump from one millionth to one thousandth in mean squared error terms will be very low. It will be insignificant and it won't guide your gradient boosting process or your back propagation in the right direction. It will guide it in the right direction but it will be like a very slow guidance, it won't have enough power, whereas if you do through **cross-entropy**, cross-entropy will understand that, oh **even though these are very small adjustments that are just, you know, making a tiny change in absolute terms, in relative terms, it's a huge improvement, and we're definitely going in the right direction**, let's keep going that way.
 
- ![](./pics/MSEcsCrossEntropy.png)
+ ![](./pics/MSEvsCrossEntropy.png)
 
 
 
@@ -467,5 +467,6 @@ Because the transformations are random transformations, well our model will neve
 
 In summary, ***image augmentation is a technique that allows us to enrich our data set, our data set, without adding more images and therefore that allows us to get good performance results with little or no overfitting, even with a small amount of images.***
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc5Nzc1MTg3LDE4MTM2MTIwOTVdfQ==
+eyJoaXN0b3J5IjpbLTEyMjc2MDkxNzgsNTc5Nzc1MTg3LDE4MT
+M2MTIwOTVdfQ==
 -->
