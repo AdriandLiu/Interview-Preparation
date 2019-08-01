@@ -448,7 +448,7 @@ Overall Procedure:
  MSE: Regression
  Why Cross-Entropy in classification:
 
-When you **derive the cost function** from the aspect of probability and distribution, you can observe that **MSE happens when you assume the error follows Normal Distribution** and **cross-entropy when you assume binomial distribution**. It means that implicitly when you use **MSE, you are doing regression** (estimation) and when you use CE, you are doing classification.
+When you **derive the cost function** from the aspect of probability and distribution, you can observe that **MSE happens when you assume the error follows Normal Distribution** and **cross-entropy when you assume binomial distribution**. It means that implicitly when you use **MSE, you are doing regression** (estimation) and when you use **CE, you are doing classification**.
 
 
 
@@ -472,6 +472,6 @@ Because the transformations are random transformations, well our model will neve
 
 In summary, ***image augmentation is a technique that allows us to enrich our data set, our data set, without adding more images and therefore that allows us to get good performance results with little or no overfitting, even with a small amount of images.***
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2MTY2OTQ4NiwtMTIyNzYwOTE3OCw1Nz
-k3NzUxODcsMTgxMzYxMjA5NV19
+eyJoaXN0b3J5IjpbLTE1MzIxNzgwNjYsLTEyMjc2MDkxNzgsNT
+c5Nzc1MTg3LDE4MTM2MTIwOTVdfQ==
 -->
