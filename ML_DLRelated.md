@@ -435,7 +435,11 @@ Overall Procedure:
 
 
 ## Full Connection
+![](./pics/DogCNN.png)
+![](./pics/CatCNN.png)
 
+
+##
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMzYxMjA5NV19
+eyJoaXN0b3J5IjpbMTIyODY0NjYzOSwxODEzNjEyMDk1XX0=
 -->
