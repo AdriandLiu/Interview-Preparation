@@ -471,7 +471,12 @@ Use ImageDataGenerator() from Keras when there are not much images.
 Because the transformations are random transformations, well our model will never find the same picture across the batches. So **all this image augmentation trick can only reduce overfitting.**
 
 In summary, ***image augmentation is a technique that allows us to enrich our data set, our data set, without adding more images and therefore that allows us to get good performance results with little or no overfitting, even with a small amount of images.***
+
+### Improve the model
+1. Add a convolutional layer OR
+2. Add a fully connected layer
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyOTUxODYxMiwtMTIyNzYwOTE3OCw1Nz
-k3NzUxODcsMTgxMzYxMjA5NV19
+eyJoaXN0b3J5IjpbLTE3MjMzNDUyNzksMTMyOTUxODYxMiwtMT
+IyNzYwOTE3OCw1Nzk3NzUxODcsMTgxMzYxMjA5NV19
 -->
