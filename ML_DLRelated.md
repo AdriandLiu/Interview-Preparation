@@ -525,10 +525,10 @@ From the experiment, **40%(30%-50%)** is the best.
 5. **Kernal size**
 Instead of using one convolution layer of size 5x5, you can mimic 5x5 by using two consecutive 3x3 layers and it will be more nonlinear.
 
-6. **strides 
-Instead of using a max pooling layer, you can subsample by using a convolution layer with strides=2 and it will be learnable
+6. **Stride**
+Instead of using a max pooling layer, you can pool by using a convolution layer with strides=2 and it will be learnable
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxOTkxNzcyMiwtMTAxOTAyNjIyNSwtMT
-cyMzM0NTI3OSwxMzI5NTE4NjEyLC0xMjI3NjA5MTc4LDU3OTc3
-NTE4NywxODEzNjEyMDk1XX0=
+eyJoaXN0b3J5IjpbMTExNzQ1NzYxMywxNjE5OTE3NzIyLC0xMD
+E5MDI2MjI1LC0xNzIzMzQ1Mjc5LDEzMjk1MTg2MTIsLTEyMjc2
+MDkxNzgsNTc5Nzc1MTg3LDE4MTM2MTIwOTVdfQ==
 -->
