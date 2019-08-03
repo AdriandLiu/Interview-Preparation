@@ -527,8 +527,25 @@ Instead of using one convolution layer of size 5x5, you can mimic 5x5 by using t
 
 6. **Stride** (Stride is the number of pixels shifts over the input matrix. When the stride is 1 then we move the filters to 1 pixel at a time. When the stride is 2 then we move the filters to 2 pixels at a time and so on)
 Instead of using a max pooling layer, you can pool by using a convolution layer with strides=2 and it will be learnable
+
+
+
+
+
+### Padding
+#### Summary:
+padding是增加各个边的pixels的数量，目的是保持feature map 不要太小，但也没必要超过原图的大小，所以不可以任意数量；
+padding的上限是维持feature map 大小与原图大小一致，具体增加pixel的数量多少，由filter的尺寸和stride大小共同决定；
+有一个具体的算法，实现padding, filter size, feature map size之间的相互推导计算。
+
+#### padding 存在的意义在于
+为了不丢弃原图信息
+为了保持feature map 的大小与原图一致
+为了让更深层的layer的input依旧保持有足够大的信息量
+为了实现上述目的，且不做多余的事情，padding出来的pixel的值都是0，不存在噪音问题。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5ODY5MjI2NSwxNjE5OTE3NzIyLC0xMD
-E5MDI2MjI1LC0xNzIzMzQ1Mjc5LDEzMjk1MTg2MTIsLTEyMjc2
-MDkxNzgsNTc5Nzc1MTg3LDE4MTM2MTIwOTVdfQ==
+eyJoaXN0b3J5IjpbNDk4ODk0MDAsLTY5ODY5MjI2NSwxNjE5OT
+E3NzIyLC0xMDE5MDI2MjI1LC0xNzIzMzQ1Mjc5LDEzMjk1MTg2
+MTIsLTEyMjc2MDkxNzgsNTc5Nzc1MTg3LDE4MTM2MTIwOTVdfQ
+==
 -->
