@@ -517,9 +517,9 @@ Hence, 3 or 4 layers
 It appears that **32 maps in the first convolutional layer** and **64 maps in the second convolutional layer** is the best. Architectures with more maps only perform **slightly better** and are not worth the additonal computation cost.
 
 3. **How large a dense layer?**
-It appears that **128 units is the best**. Dense layers with more units only perform ***slightly better and are not worth the additional computational cost. (I also tested using two consecutive dense layers instead of one, but that showed no benefit over a single dense layer.)
+It appears that **128 units is the best**. Dense layers with more units only perform **slightly better** and are not worth the additional computational cost. (I also tested **using two consecutive dense layers** instead of one, but that showed **no benefit over a single dense layer**.)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NjYzODc0NCwtMTAxOTAyNjIyNSwtMT
-cyMzM0NTI3OSwxMzI5NTE4NjEyLC0xMjI3NjA5MTc4LDU3OTc3
-NTE4NywxODEzNjEyMDk1XX0=
+eyJoaXN0b3J5IjpbNDgwMDAzNzEwLC0xMDE5MDI2MjI1LC0xNz
+IzMzQ1Mjc5LDEzMjk1MTg2MTIsLTEyMjc2MDkxNzgsNTc5Nzc1
+MTg3LDE4MTM2MTIwOTVdfQ==
 -->
