@@ -528,7 +528,8 @@ Instead of using one convolution layer of size 5x5, you can mimic 5x5 by using t
 6. **Stride** (Stride is the number of pixels shifts over the input matrix. When the stride is 1 then we move the filters to 1 pixel at a time. When the stride is 2 then we move the filters to 2 pixels at a time and so on)
 Instead of using a max pooling layer, you can pool by using a convolution layer with strides=2 and it will be learnable
 
-
+7. **Batch normalization** HELPS!
+8. **Data augumentation** HELPS! (ImageDataGenerator() from Keras)
 
 
 
@@ -544,8 +545,8 @@ padding的上限是维持feature map 大小与原图大小一致，具体增加p
 为了让更深层的layer的input依旧保持有足够大的信息量
 为了实现上述目的，且不做多余的事情，padding出来的pixel的值都是0，不存在噪音问题。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk4ODk0MDAsLTY5ODY5MjI2NSwxNjE5OT
-E3NzIyLC0xMDE5MDI2MjI1LC0xNzIzMzQ1Mjc5LDEzMjk1MTg2
-MTIsLTEyMjc2MDkxNzgsNTc5Nzc1MTg3LDE4MTM2MTIwOTVdfQ
-==
+eyJoaXN0b3J5IjpbLTM4MTM5NDMwMyw0OTg4OTQwMCwtNjk4Nj
+kyMjY1LDE2MTk5MTc3MjIsLTEwMTkwMjYyMjUsLTE3MjMzNDUy
+NzksMTMyOTUxODYxMiwtMTIyNzYwOTE3OCw1Nzk3NzUxODcsMT
+gxMzYxMjA5NV19
 -->
