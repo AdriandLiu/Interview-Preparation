@@ -507,9 +507,12 @@ for j in range(3):
 Another layers number choice example:
 if input image is 64x64:
 one pair: 32x32
-two pair: 16x
+two pair: 16x16
+three pair: 8x8
+four pair: 4x4
+so the filters number should be increased in each sequential layers. such as 24, 48 64, 128
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3OTk3MjU2OSwtMTAxOTAyNjIyNSwtMT
-cyMzM0NTI3OSwxMzI5NTE4NjEyLC0xMjI3NjA5MTc4LDU3OTc3
-NTE4NywxODEzNjEyMDk1XX0=
+eyJoaXN0b3J5IjpbLTE1OTA5NDg4MDYsLTEwMTkwMjYyMjUsLT
+E3MjMzNDUyNzksMTMyOTUxODYxMiwtMTIyNzYwOTE3OCw1Nzk3
+NzUxODcsMTgxMzYxMjA5NV19
 -->
