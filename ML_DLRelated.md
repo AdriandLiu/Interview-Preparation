@@ -477,7 +477,7 @@ In summary, ***image augmentation is a technique that allows us to enrich our da
 2. Add a fully connected layer
 
 
-### CNN 	Architecture for MNIST
+## !!!!!! CNN 	Architecture for MNIST
 [Kaggle Experiment](https://www.kaggle.com/cdeotte/how-to-choose-cnn-architecture-mnist)
 
 1. **How many convolution-pooling pairs? (choose number of convolutional-pooling layers)**
@@ -545,8 +545,8 @@ padding的上限是维持feature map 大小与原图大小一致，具体增加p
 为了让更深层的layer的input依旧保持有足够大的信息量
 为了实现上述目的，且不做多余的事情，padding出来的pixel的值都是0，不存在噪音问题。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MTM5NDMwMyw0OTg4OTQwMCwtNjk4Nj
-kyMjY1LDE2MTk5MTc3MjIsLTEwMTkwMjYyMjUsLTE3MjMzNDUy
-NzksMTMyOTUxODYxMiwtMTIyNzYwOTE3OCw1Nzk3NzUxODcsMT
-gxMzYxMjA5NV19
+eyJoaXN0b3J5IjpbMTc2NTQ5MDE4MCwtMzgxMzk0MzAzLDQ5OD
+g5NDAwLC02OTg2OTIyNjUsMTYxOTkxNzcyMiwtMTAxOTAyNjIy
+NSwtMTcyMzM0NTI3OSwxMzI5NTE4NjEyLC0xMjI3NjA5MTc4LD
+U3OTc3NTE4NywxODEzNjEyMDk1XX0=
 -->
