@@ -484,9 +484,31 @@ In summary, ***image augmentation is a technique that allows us to enrich our da
 input image = 28x28, after one pair, it's 14x14. After two, it's 7x7. After three it's 4x4 (or 3x3 if we don't use padding='same'). It doesn't make sense to do a fourth convolution.
 TWO if computational cost matters, otherwise 3.
 NOTE: Conv2D(): filters is double in each sequential layer, ex:
+nets = 3
+model = [0] *nets
 
+for j in range(3):
+    model[j] = Sequential()
+    model[j].add(Conv2D(**24**,kernel_size=5,padding='same',activation='relu',
+            input_shape=(28,28,1)))
+    model[j].add(MaxPool2D())
+    if j>0:
+        model[j].add(Conv2D(**48**,kernel_size=5,padding='same',activation='relu'))
+        model[j].add(MaxPool2D())
+    if j>1:
+        model[j].add(Conv2D(**64**,kernel_size=5,padding='same',activation='relu'))
+        model[j].add(MaxPool2D(padding='same'))
+    model[j].add(Flatten())
+    model[j].add(Dense(256, activation='relu'))
+    model[j].add(Dense(10, activation='softmax'))
+    model[j].compile(optimizer="adam", loss="categorical_crossentropy", metrics=["accuracy"])
+
+Another layers number choice example:
+if input image is 64x64:
+one pair: 32x32
+two par
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc1NjcwNDYyLC0xMDE5MDI2MjI1LC0xNz
-IzMzQ1Mjc5LDEzMjk1MTg2MTIsLTEyMjc2MDkxNzgsNTc5Nzc1
-MTg3LDE4MTM2MTIwOTVdfQ==
+eyJoaXN0b3J5IjpbMjE0MzkzNzUwNCwtMTAxOTAyNjIyNSwtMT
+cyMzM0NTI3OSwxMzI5NTE4NjEyLC0xMjI3NjA5MTc4LDU3OTc3
+NTE4NywxODEzNjEyMDk1XX0=
 -->
