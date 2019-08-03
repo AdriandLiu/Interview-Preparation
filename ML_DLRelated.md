@@ -480,7 +480,7 @@ In summary, ***image augmentation is a technique that allows us to enrich our da
 ### CNN 	Architecture for MNIST
 [Kaggle Experiment](https://www.kaggle.com/cdeotte/how-to-choose-cnn-architecture-mnist)
 
-1. How many convolution-pooling pairs? (choose number of convolutional-pooling layers)
+1. **How many convolution-pooling pairs? (choose number of convolutional-pooling layers)**
 input image = 28x28, after one pair, it's 14x14. After two, it's 7x7. After three it's 4x4 (or 3x3 if we don't use padding='same'). It doesn't make sense to do a fourth convolution.
 TWO if computational cost matters, otherwise 3.
 NOTE: Conv2D(): filters number is double in each sequential layer, ex:
@@ -510,9 +510,13 @@ one pair: 32x32
 two pair: 16x16
 three pair: 8x8
 four pair: 4x4
-so the filters number should be increased in each sequential layers. such as 24, 48 64, 128
+so the filters number should be increased in each sequential layers. such as 24, 48 64, 128. 
+Hence, 3 or 4 layers
+
+2. **How many feature maps?**
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTA5NDg4MDYsLTEwMTkwMjYyMjUsLT
-E3MjMzNDUyNzksMTMyOTUxODYxMiwtMTIyNzYwOTE3OCw1Nzk3
-NzUxODcsMTgxMzYxMjA5NV19
+eyJoaXN0b3J5IjpbODc1NTE1MDk0LC0xMDE5MDI2MjI1LC0xNz
+IzMzQ1Mjc5LDEzMjk1MTg2MTIsLTEyMjc2MDkxNzgsNTc5Nzc1
+MTg3LDE4MTM2MTIwOTVdfQ==
 -->
