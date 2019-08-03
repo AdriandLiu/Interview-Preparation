@@ -521,8 +521,14 @@ It appears that **128 units is the best**. Dense layers with more units only per
 
 4. **How much dropout?**
 From the experiment, **40%(30%-50%)** is the best.
+
+5. **Kernal size**
+Instead of using one convolution layer of size 5x5, you can mimic 5x5 by using two consecutive 3x3 layers and it will be more nonlinear.
+
+6. **strides 
+Instead of using a max pooling layer, you can subsample by using a convolution layer with strides=2 and it will be learnable
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5NjM5OTQyNSwtMTAxOTAyNjIyNSwtMT
+eyJoaXN0b3J5IjpbMTYxOTkxNzcyMiwtMTAxOTAyNjIyNSwtMT
 cyMzM0NTI3OSwxMzI5NTE4NjEyLC0xMjI3NjA5MTc4LDU3OTc3
 NTE4NywxODEzNjEyMDk1XX0=
 -->
