@@ -479,12 +479,12 @@ In summary, ***image augmentation is a technique that allows us to enrich our da
 
 ### CNN 	Architecture for MNIST
 [Kaggle Experiment](https://www.kaggle.com/cdeotte/how-to-choose-cnn-architecture-mnist)
-1. How many convolution-subsambling pairs? (choose filters)
-input image = 28x28
+1. How many convolution-subsambling pairs? (choose number of convolutional layers)
+input image = 28x28, one layer
 2 if computational cost matters, otherwise 3.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTkwMjYyMjUsLTE3MjMzNDUyNzksMT
-MyOTUxODYxMiwtMTIyNzYwOTE3OCw1Nzk3NzUxODcsMTgxMzYx
-MjA5NV19
+eyJoaXN0b3J5IjpbLTgxMTgzNjk1MiwtMTAxOTAyNjIyNSwtMT
+cyMzM0NTI3OSwxMzI5NTE4NjEyLC0xMjI3NjA5MTc4LDU3OTc3
+NTE4NywxODEzNjEyMDk1XX0=
 -->
