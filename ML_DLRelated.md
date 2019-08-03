@@ -476,7 +476,11 @@ In summary, ***image augmentation is a technique that allows us to enrich our da
 1. Add a convolutional layer OR
 2. Add a fully connected layer
 
+
+### CNN 	Architecture for MNIST
+[Kaggle Experiment]()
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjMzNDUyNzksMTMyOTUxODYxMiwtMT
-IyNzYwOTE3OCw1Nzk3NzUxODcsMTgxMzYxMjA5NV19
+eyJoaXN0b3J5IjpbNzMwMTQ3NDEzLC0xNzIzMzQ1Mjc5LDEzMj
+k1MTg2MTIsLTEyMjc2MDkxNzgsNTc5Nzc1MTg3LDE4MTM2MTIw
+OTVdfQ==
 -->
