@@ -645,6 +645,28 @@ VGG doesn’t have a batch norm layer in it because batch normalization didn’t
 **If we insert a batch norm in a pre-trained network, it will change the pre-trained weights, because it will subtract the mean and divide by the standard deviation for the activation layers and we don’t want that to happen because we need those pre-trained weights to stay the same. So, what we need to do is to insert a batch norm layer and figure out gamma and beta in order to undo the outputs change.**
 To summarize everything, you can think about batch normalization as doing preprocessing at every layer of the network.
 
+
+### Batch size; Epoch; Iterations 
+
+[Detailed Explainations; Ad](https://stats.stackexchange.com/q/153535)
+
+In short, **The batch size defines the number of samples that will be propagated through the network.**
+
+**Advantages of using a batch size < number of all samples:**
+
+It requires less memory. Since you train the network using fewer samples, the overall training procedure requires less memory. That's especially important if you are not able to fit the whole dataset in your machine's memory.
+
+Typically networks train faster with mini-batches. That's because we update the weights after each propagation. In our example we've propagated 11 batches (10 of them had 100 samples and 1 had 50 samples) and after each of them we've updated our network's parameters. If we used all samples during propagation we would make only 1 update for the network's parameter.
+
+**Disadvantages of using a batch size < number of all samples:**
+
+The smaller the batch the less accurate the estimate of the gradient will be. In the figure below, you can see that the direction of the mini-batch gradient (green color) fluctuates much more in comparison to the direction of the full batch gradient (blue color)
+
+**batch size** = the number of training examples in one forward/backward pass. The higher the batch size, the more memory space you'll need.
+**one epoch** = one forward pass and one backward pass of all the training examples
+
+**number of iterations** = number of passes, each pass using [batch size] number of examples. To be clear, one pass = one forward pass + one backward pass (we do not count the forward pass and backward pass as two different passes)..
+
 ### Padding
 #### Summary:
 padding是增加各个边的pixels的数量，目的是保持feature map 不要太小，但也没必要超过原图的大小，所以不可以任意数量；
