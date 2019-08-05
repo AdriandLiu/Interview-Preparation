@@ -678,3 +678,9 @@ padding的上限是维持feature map 大小与原图大小一致，具体增加p
 为了保持feature map 的大小与原图一致
 为了让更深层的layer的input依旧保持有足够大的信息量
 为了实现上述目的，且不做多余的事情，padding出来的pixel的值都是0，不存在噪音问题。
+
+
+# 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTcxMTE0MDkyNV19
+-->
