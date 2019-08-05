@@ -378,6 +378,58 @@ Extract features from input image or prior layers
 <br/>
 <br/>
 
+
+**CODE EXAMPLES:**
+
+##### Initialising the CNN
+classifier = Sequential()
+
+##### Step 1 - Convolution (two covolutional layers)
+input_size = (128, 128)
+classifier.add(Conv2D(32, (3, 3), input_shape=(*input_size, 3)))
+classifier.add(Activation("relu"))
+classifier.add(Conv2D(32, (3, 3), activation = "relu"))
+
+##### Step 2 - Pooling
+classifier.add(MaxPooling2D(pool_size=(2, 2)))  # 2x2 is optimal
+classifier.add(BatchNormalization())
+classifier.add(Dropout(0.2))
+
+##### Adding a second convolutional(two)-pooling pair of layers
+classifier.add(Conv2D(32, (3, 3)))
+classifier.add(Activation("relu"))
+classifier.add(Conv2D(32, (3, 3), activation = "relu"))
+classifier.add(MaxPooling2D(pool_size=(2, 2)))
+classifier.add(BatchNormalization())
+classifier.add(Dropout(0.2))
+
+##### Adding a third convolutional(three)-pooling pair of layers
+classifier.add(Conv2D(64, (3, 3)))
+classifier.add(Activation("relu"))
+classifier.add(Conv2D(64, (3, 3), activation = "relu"))
+classifier.add(Conv2D(64, (3, 3), activation = "relu"))
+classifier.add(MaxPooling2D(pool_size=(2, 2)))
+classifier.add(BatchNormalization())
+classifier.add(Dropout(0.2))
+
+
+##### Step 3 - Flattening
+classifier.add(Flatten())
+
+##### Step 4 - Full connection
+classifier.add(Dense(units=64, activation='relu'))
+classifier.add(Dropout(0.2))
+classifier.add(Dense(units=1, activation='sigmoid'))
+
+##### Compiling the CNN
+classifier.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+
 Example:
 ![Alexnet](./pics/AlexNet.png)
 
