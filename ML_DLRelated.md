@@ -370,6 +370,9 @@ Extract features from input image or prior layers
 
 ![](./pics/ProcedureCNN.PNG)
 
+<br/>
+<br/>
+
 **Note:** Regarding choose number of pairs of convS-pooling, refer to section *!!!!!! CNN   Architecture for MNIST*; ***Conv layer can be followed by BN as well.*** 
 
 
