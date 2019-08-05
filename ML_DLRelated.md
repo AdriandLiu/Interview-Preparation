@@ -357,13 +357,41 @@ MSE VS CROSS-ENTROPY
 
 # CNN (Convolutional Neural Networks)
 
-  
+
+## !!!!!! IMPORTANT TO UNDERSTAND CNN IN WHOLE: Objective of Convolutional layer
+
+[Example of Popular CNN Architectures, refer to *Classic Network* section](https://www.analyticsvidhya.com/blog/2018/12/guide-convolutional-neural-network-cnn/)
+
+Extract features from input image or prior layers
+
+**Conv layer keep the dimension of input image or prior layer data (extract features/generate feature maps or filters), while pooling layer decrease the data dimension exponentially (extract more important feature)**
+
+## Architecture to get high accuracy results from popular networks
+
+![](./pics/ProcedureCNN.PNG)
+
+**Note:** Regarding choose number of pairs of convS-pooling, refer to section *!!!!!! CNN   Architecture for MNIST*
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+Example:
+![Alexnet](./pics/AlexNet.png)
+
+
+<br/>
+<br/>
+<br/>
+<br/>
 
 ![](./pics/CNN_procedure.png)
 
   
 
-Input Image -> Feature Detector (Kernel or Filter) = **Feature Map** (how many pixels of Input pixels match Feature Detector matrix) (make the image smaller) (lose information but force on important features to us)
+Input Image -> Feature Detector (Kernel or Filter) = **Feature Map** (how many pixels of Input pixels match Feature Detector matrix) (make the image smaller) (lose information but force on important features to us) (dimentions same as input image or prior layer)
 
   
 
@@ -379,7 +407,6 @@ Convolutional Neural Networks are (usually) supervised methods for image/object 
 
 Once you have decided the size of the filters, as much as the initialization of the filters is important to "guide" the learning, you can indeed initialize them to random values, and let the learning do the work.
 
-  
 
   
 
@@ -481,6 +508,7 @@ In summary, ***image augmentation is a technique that allows us to enrich our da
 [Kaggle Experiment](https://www.kaggle.com/cdeotte/how-to-choose-cnn-architecture-mnist)
 
 1. **How many convolution-pooling pairs? (choose number of convolutional-pooling layers)**
+**Pooling will decrease dimensions of your data exponentially. And so even if you have an image of size 256 x 256, you only get maybe 5 pools before you lose too much information (and therefore 5 convolutions) (256/(2^5)=8)**
 input image = 28x28, after one pair, it's 14x14. After two, it's 7x7. After three it's 4x4 (or 3x3 if we don't use padding='same'). It doesn't make sense to do a fourth convolution.
 TWO if computational cost matters, otherwise 3.
 NOTE: Conv2D(): filters number is double in each sequential layer, ex:
@@ -528,8 +556,14 @@ Instead of using one convolution layer of size 5x5, you can mimic 5x5 by using t
 6. **Stride** (Stride is the number of pixels shifts over the input matrix. When the stride is 1 then we move the filters to 1 pixel at a time. When the stride is 2 then we move the filters to 2 pixels at a time and so on)
 Instead of using a max pooling layer, you can pool by using a convolution layer with strides=2 and it will be learnable
 
-7. **Batch normalization** HELPS!
-8. **Data augumentation** HELPS! (ImageDataGenerator() from Keras)
+7. What is the **benefit of using two consecutive convolutional layers then a pool layer instead of a conv pool**?
+
+**Pooling decreases the dimensions of your data exponentially**. And so even if you have an image of size 256 x 256, you only get maybe 5 pools before you **lose too much information** (and therefore 5 convolutions). As a result, we would typically like to have multiple conv layers before a pool, so that we can build up **better representations of the data without quickly losing all of your spatial information**.
+
+In fact, we often don't even use two convolutions per pool, in many of the modern large image classifican networks, like VGG, Inception and ResNet, you can often see 5–30 conv layers at a time before pooling!
+
+8. **Batch normalization** HELPS!
+9. **Data augumentation** HELPS! (ImageDataGenerator() from Keras)
 
 
 
