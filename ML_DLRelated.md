@@ -370,7 +370,7 @@ Extract features from input image or prior layers
 
 ![](./pics/ProcedureCNN.PNG)
 
-**Note:** Regarding choose number of pairs of convS-pooling, refer to section *!!!!!! CNN   Architecture for MNIST*
+**Note:** Regarding choose number of pairs of convS-pooling, refer to section *!!!!!! CNN   Architecture for MNIST*; ***Conv layer can be followed by BN as well.*** 
 
 
 <br/>
@@ -405,7 +405,7 @@ classifier.add(Dropout(0.2))
 
 ##### Adding a third convolutional(three)-pooling pair of layers
 classifier.add(Conv2D(64, (3, 3)))
-classifier.add(Activation("relu"))
+classifier.add(Activation("relu")) 
 classifier.add(Conv2D(64, (3, 3), activation = "relu"))
 classifier.add(Conv2D(64, (3, 3), activation = "relu"))
 classifier.add(MaxPooling2D(pool_size=(2, 2)))
