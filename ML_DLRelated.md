@@ -371,7 +371,6 @@ Extract features from input image or prior layers
 ![](./pics/ProcedureCNN.PNG)
 
 <br/>
-<br/>
 
 **Note:** Regarding choose number of pairs of convS-pooling, refer to section *!!!!!! CNN   Architecture for MNIST*; ***Conv layer can be followed by BN as well.*** 
 
@@ -387,7 +386,7 @@ Extract features from input image or prior layers
 ##### Initialising the CNN
 classifier = Sequential()
 
-##### Step 1 - Convolution (two covolutional layers)
+##### Step 1 - Convolution (two covolutional layers) #Conv layer can be followed by BN as well.
 input_size = (128, 128)
 classifier.add(Conv2D(32, (3, 3), input_shape=(*input_size, 3)))
 classifier.add(Activation("relu"))
@@ -398,7 +397,7 @@ classifier.add(MaxPooling2D(pool_size=(2, 2)))  # 2x2 is optimal
 classifier.add(BatchNormalization())
 classifier.add(Dropout(0.2))
 
-##### Adding a second convolutional(two)-pooling pair of layers
+##### Adding a second convolutional(two)-pooling pair of layers #Conv layer can be followed by BN as well.
 classifier.add(Conv2D(32, (3, 3)))
 classifier.add(Activation("relu"))
 classifier.add(Conv2D(32, (3, 3), activation = "relu"))
@@ -406,7 +405,7 @@ classifier.add(MaxPooling2D(pool_size=(2, 2)))
 classifier.add(BatchNormalization())
 classifier.add(Dropout(0.2))
 
-##### Adding a third convolutional(three)-pooling pair of layers
+##### Adding a third convolutional(three)-pooling pair of layers #Conv layer can be followed by BN as well.
 classifier.add(Conv2D(64, (3, 3)))
 classifier.add(Activation("relu")) 
 classifier.add(Conv2D(64, (3, 3), activation = "relu"))
