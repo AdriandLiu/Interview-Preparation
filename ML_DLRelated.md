@@ -680,7 +680,7 @@ padding的上限是维持feature map 大小与原图大小一致，具体增加p
 为了实现上述目的，且不做多余的事情，padding出来的pixel的值都是0，不存在噪音问题。
 
 
-# 
+# Recurrent Neural Network 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMTE0MDkyNV19
+eyJoaXN0b3J5IjpbLTE1NDUyNzgyMTZdfQ==
 -->
