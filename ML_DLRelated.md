@@ -473,7 +473,7 @@ Because the transformations are random transformations, well our model will neve
 In summary, ***image augmentation is a technique that allows us to enrich our data set, our data set, without adding more images and therefore that allows us to get good performance results with little or no overfitting, even with a small amount of images.***
 
 ### Improve the model
-1. Add a convolutional layer OR
+1. Add a convolutional layer (will extract more features, but too many convolutional layers will cause overfitting, ex: [Suppose we train a model for detecting cats. If all cats features are detected and we add more layers, it can start detecting the bell the cat is wearing as a part of the cat. It may end up classifying a cat without bell as not cat and may sometimes classify another animal with bell as cat. This is because adding more layers beyond a certain threshold leads to finding irregularities in the data](https://www.quora.com/Does-adding-more-layers-always-result-in-more-accuracy-in-convolutional-neural-networks)) OR
 2. Add a fully connected layer
 
 
@@ -488,20 +488,20 @@ NOTE: Conv2D(): filters number is double in each sequential layer, ex:
 nets = 3
 model = [0] *nets
 
-for j in range(3):
-    model[j] = Sequential()
+for j in range(3):<br/>
+    model[j] = Sequential()<br/>
     model[j].add(Conv2D(**24**,kernel_size=5,padding='same',activation='relu',
-            input_shape=(28,28,1)))
-    model[j].add(MaxPool2D())
-    if j>0:
-        model[j].add(Conv2D(**48**,kernel_size=5,padding='same',activation='relu'))
-        model[j].add(MaxPool2D())
-    if j>1:
-        model[j].add(Conv2D(**64**,kernel_size=5,padding='same',activation='relu'))
-        model[j].add(MaxPool2D(padding='same'))
-    model[j].add(Flatten())
-    model[j].add(Dense(256, activation='relu'))
-    model[j].add(Dense(10, activation='softmax'))
+            input_shape=(28,28,1)))<br/>
+    model[j].add(MaxPool2D())<br/>
+    if j>0:<br/>
+        model[j].add(Conv2D(**48**,kernel_size=5,padding='same',activation='relu'))<br/>
+        model[j].add(MaxPool2D())<br/>
+    if j>1:<br/>
+        model[j].add(Conv2D(**64**,kernel_size=5,padding='same',activation='relu'))<br/>
+        model[j].add(MaxPool2D(padding='same'))<br/>
+    model[j].add(Flatten())<br/>
+    model[j].add(Dense(256, activation='relu'))<br/>
+    model[j].add(Dense(10, activation='softmax'))<br/>
     model[j].compile(optimizer="adam", loss="categorical_crossentropy", metrics=["accuracy"])
 
 Another layers number choice example:
@@ -509,7 +509,7 @@ if input image is 64x64:
 one pair: 32x32
 two pair: 16x16
 three pair: 8x8
-four pair: 4x4
+four pair: 4x4<br/>
 so the filters number should be increased in each sequential layers. such as 24, 48 64, 128. 
 Hence, 3 or 4 layers
 
@@ -544,9 +544,3 @@ padding的上限是维持feature map 大小与原图大小一致，具体增加p
 为了保持feature map 的大小与原图一致
 为了让更深层的layer的input依旧保持有足够大的信息量
 为了实现上述目的，且不做多余的事情，padding出来的pixel的值都是0，不存在噪音问题。
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NTQ5MDE4MCwtMzgxMzk0MzAzLDQ5OD
-g5NDAwLC02OTg2OTIyNjUsMTYxOTkxNzcyMiwtMTAxOTAyNjIy
-NSwtMTcyMzM0NTI3OSwxMzI5NTE4NjEyLC0xMjI3NjA5MTc4LD
-U3OTc3NTE4NywxODEzNjEyMDk1XX0=
--->
