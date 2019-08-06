@@ -687,6 +687,8 @@ padding的上限是维持feature map 大小与原图大小一致，具体增加p
 
 ### The Vanishing Gradient Problem In RNN
 
+Weights are assigned at the start of the neural network with the random values, which are close to zero, and from there the network trains them up. But, when you start with wrec close to zero and multiply xt, xt-1, xt-2, xt-3, … by this value, your gradient becomes less and less with each multiplication.
+
 #### Why
 
 [](./pics/RNN.png)
@@ -727,7 +729,7 @@ W_rec  = 1
 [](./pics/LSTM.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mzg0Nzk5NTIsNDU2NjIzNjE1LC0xMj
-AwNzc4OTM4LDE3OTUzNjIxOTIsODAxOTk4MTczLDExOTg4MTYx
-NTIsLTE3MDcwNjcwNjVdfQ==
+eyJoaXN0b3J5IjpbLTE4NzMwNDkwMDksLTE2Mzg0Nzk5NTIsND
+U2NjIzNjE1LC0xMjAwNzc4OTM4LDE3OTUzNjIxOTIsODAxOTk4
+MTczLDExOTg4MTYxNTIsLTE3MDcwNjcwNjVdfQ==
 -->
