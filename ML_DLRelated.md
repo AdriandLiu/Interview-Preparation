@@ -684,9 +684,14 @@ padding的上限是维持feature map 大小与原图大小一致，具体增加p
 
 ### The Vanishing Gradient Problem
 
-**If a change in the parameter's value causes very small change in the network's output - the network just can't learn the parameter effectively, which is a problem.**
+**If a change in the parameter's value causes very small change in the network's output - the network just can't learn the parameter effectively, which is a problem.** (the gradients of the network's output with respect to the parameters in the early layers become extremely small)
 
 
+**Vanishing gradient problem depends on the choice of the activation function.** Many common activation functions (e.g sigmoid or tanh) 'squash' their input into a very small output range in a very non-linear fashion. For example, sigmoid maps the real number line onto a "small" range of [0, 1], especially with the function being very flat on most of the number-line. As a result, there are large regions of the input space which are mapped to an extremely small range. In these regions of the input space, even a large change in the input will produce a small change in the output - hence the gradient is small.
+
+This becomes much worse when we stack multiple layers of such non-linearities on top of each other. For instance, first layer will map a large input region to a smaller output region, which will be mapped to an even smaller region by the second layer, which will be mapped to an even smaller region by the third layer and so on. As a result, even a large change in the parameters of the first layer doesn't change the output much.
+
+We can avoid this problem by using activation functions which don't have this property of 'squashing' the input space into a small region. A popular choice is Rectified Linear Unit which maps  xx  to  max(0,x)max(0,x).
 
 [](./pics/VanishingGradient.png)
 
@@ -704,6 +709,6 @@ While backproporgating, the weights are getting smaller as shows above will caus
 	* **Echo State Networks**
 	* **LSTM**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MjI2MDA5Myw4MDE5OTgxNzMsMTE5OD
-gxNjE1MiwtMTcwNzA2NzA2NV19
+eyJoaXN0b3J5IjpbNTQ3MTAxNDcxLDgwMTk5ODE3MywxMTk4OD
+E2MTUyLC0xNzA3MDY3MDY1XX0=
 -->
