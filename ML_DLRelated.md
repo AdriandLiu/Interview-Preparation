@@ -763,15 +763,15 @@ Tanh and sigmoid have
 
 ### LSTM Variations
 
-[LSTM Variations](variants-on-long-short-term-memory)
+[LSTM Variations](https://colah.github.io/posts/2015-08-Understanding-LSTMs#variants-on-long-short-term-memory)
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MjUxNDE3LC02MDQyNzY5NDEsLTIxND
-UyMjM5MzgsLTU0NDUxMjU0MywtMTExMDkwOTQzMywtOTE2MTk3
-Mjk4LC0xOTU1MjM0NTUxLC0xNjM4NDc5OTUyLDQ1NjYyMzYxNS
-wtMTIwMDc3ODkzOCwxNzk1MzYyMTkyLDgwMTk5ODE3MywxMTk4
-ODE2MTUyLC0xNzA3MDY3MDY1XX0=
+eyJoaXN0b3J5IjpbMTY2NjgwNjYwMiwtNjA0Mjc2OTQxLC0yMT
+Q1MjIzOTM4LC01NDQ1MTI1NDMsLTExMTA5MDk0MzMsLTkxNjE5
+NzI5OCwtMTk1NTIzNDU1MSwtMTYzODQ3OTk1Miw0NTY2MjM2MT
+UsLTEyMDA3Nzg5MzgsMTc5NTM2MjE5Miw4MDE5OTgxNzMsMTE5
+ODgxNjE1MiwtMTcwNzA2NzA2NV19
 -->
