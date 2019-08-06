@@ -685,7 +685,12 @@ padding的上限是维持feature map 大小与原图大小一致，具体增加p
 
 
 
-### The Vanishing Gradient Problem
+### The Vanishing Gradient Problem In RNN
+
+#### Why
+
+
+This arrow means that long-term information has to sequentially travel through all cells before getting to the present processing cell. This means it can be easily corrupted by being multiplied many time by small numbers < 0. This is the cause of vanishing gradients.
 
 
 #### Problem
@@ -721,7 +726,7 @@ W_rec  = 1
 [](./pics/LSTM.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgxNjA0MTY5LDQ1NjYyMzYxNSwtMTIwMD
-c3ODkzOCwxNzk1MzYyMTkyLDgwMTk5ODE3MywxMTk4ODE2MTUy
-LC0xNzA3MDY3MDY1XX0=
+eyJoaXN0b3J5IjpbLTE4OTY0OTUwMSw0NTY2MjM2MTUsLTEyMD
+A3Nzg5MzgsMTc5NTM2MjE5Miw4MDE5OTgxNzMsMTE5ODgxNjE1
+MiwtMTcwNzA2NzA2NV19
 -->
