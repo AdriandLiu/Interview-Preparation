@@ -761,6 +761,7 @@ Tanh and sigmoid have
 
 * They can both be used in calculating the binary crossentropy for classification
 
+### LSTM Variations
 
 
 
@@ -768,9 +769,9 @@ Tanh and sigmoid have
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTMxODM5MTIsLTIxNDUyMjM5MzgsLT
-U0NDUxMjU0MywtMTExMDkwOTQzMywtOTE2MTk3Mjk4LC0xOTU1
-MjM0NTUxLC0xNjM4NDc5OTUyLDQ1NjYyMzYxNSwtMTIwMDc3OD
-kzOCwxNzk1MzYyMTkyLDgwMTk5ODE3MywxMTk4ODE2MTUyLC0x
-NzA3MDY3MDY1XX0=
+eyJoaXN0b3J5IjpbLTYwNDI3Njk0MSwtMjE0NTIyMzkzOCwtNT
+Q0NTEyNTQzLC0xMTEwOTA5NDMzLC05MTYxOTcyOTgsLTE5NTUy
+MzQ1NTEsLTE2Mzg0Nzk5NTIsNDU2NjIzNjE1LC0xMjAwNzc4OT
+M4LDE3OTUzNjIxOTIsODAxOTk4MTczLDExOTg4MTYxNTIsLTE3
+MDcwNjcwNjVdfQ==
 -->
