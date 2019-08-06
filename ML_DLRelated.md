@@ -710,7 +710,10 @@ While backproporgating, the weights are getting smaller as shows above will caus
 	* **Weight Initialization** (initialize your weights to minimize the potential for vanishing gradient.)
 	* **Echo State Networks**
 	* **LSTM**
+
+## LSTM (Long Short-Term Memory)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkxNjMxNjg3LDgwMTk5ODE3MywxMTk4OD
-E2MTUyLC0xNzA3MDY3MDY1XX0=
+eyJoaXN0b3J5IjpbMTc5NTM2MjE5Miw4MDE5OTgxNzMsMTE5OD
+gxNjE1MiwtMTcwNzA2NzA2NV19
 -->
