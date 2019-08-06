@@ -687,7 +687,10 @@ padding的上限是维持feature map 大小与原图大小一致，具体增加p
 [](./pics/VanishingGradient.png)
 
 While backproporgating, the weights are getting smaller as shows above will cause the gradient small, training slow and even model will not be able to trained properly. 
+
+[](./pics/VanishingExploding.png)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MjAxNDM1MSw4MDE5OTgxNzMsMTE5OD
+eyJoaXN0b3J5IjpbLTI4MDY2MTMxNSw4MDE5OTgxNzMsMTE5OD
 gxNjE1MiwtMTcwNzA2NzA2NV19
 -->
