@@ -696,7 +696,7 @@ Weights are assigned at the start of the neural network with the random values, 
 
 #### Why
 
-[](./pics/RNN.png =250x)
+<img src="./pics/RNN.png" width="400">
 
 This arrow means that long-term information has to **sequentially** travel through all cells before getting to the present processing cell. This means it can be **easily corrupted by being multiplied many time by small numbers < 0.** This is the cause of vanishing gradients.
 
@@ -711,11 +711,11 @@ This becomes much **worse when we stack multiple layers** of such non-linearitie
 
 We can **avoid this problem by using activation functions which don't have this property of 'squashing' the input space into a small region.** A popular choice is Rectified Linear Unit which maps  xx  to  max(0,x)max(0,x).
 
-[](./pics/VanishingGradient.png)
+<img src="./pics/VanishingGradient.png" width="400">
 
 While backproporgating, the weights are getting smaller as shows above will cause the gradient small, training slow and even model will not be able to trained properly. 
 
-[](./pics/VanishingExploding.png)
+<img src="./pics/VanishingExploding.png" width="400">
 
 #### Solution
 1. Exploding Gradient
@@ -751,8 +751,8 @@ HOW:
 　　2. 通过公式也可以看出，在LSTM中，Ct=f_t∗C_t−1+i_t∗C_t˜C_t=f_t∗C_t−1+i_t∗C_t~，其中C_t−1 C_t−1是此前的信息，Ct˜Ct~是当前时刻的新信息，CtCt是最终的信息。**可以看到CtCt和Ct−1Ct−1此时是线性关系，不再是RNN中的乘积关系，因此梯度在计算的时候不再是连乘关系，梯度以线性在中间节点流动，因此就会保证很长时间的记忆**
 
 W_rec  = 1
+<img src="./pics/LSTM.png" width="400">
 
-[](./pics/LSTM.png)
 
 ### Procedure
 [GIF LSTM Procedure](https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21)
@@ -783,12 +783,13 @@ Tanh and sigmoid have
 ### LSTM Variations
 
 [LSTM Variations](https://colah.github.io/posts/2015-08-Understanding-LSTMs#variants-on-long-short-term-memory)
+<img src="./pics/LSTM3-var-peepholes.png" width="400">
 
-1. [](./pics/LSTM3-var-peepholes.png)
+1. <img src="./pics/LSTM3-var-peepholes.png" width="400">
 	* This means that we let the gate layers look at the cell state. The above diagram adds peepholes to all the gates, but many papers will give some peepholes and not others.
-2. [](/pics/LSTM3-var-tied.png)
+2. <img src="./pics/LSTM3-var-tied.png" width="400">
 	* We only forget when we’re going to input something in its place. We only input new values to the state when we forget something older.
-3. [](./pics/LSTM3-var-GRU.png)
+3. <img src="./pics/LSTM3-var-GRU.png" width="400">
 	* Cheaper computational cost
 	* 3 gates vs 2 gates in gru
 	* no ouput gate, no second non linearity and they don't have memory ct it is same as hidden state in gru.
