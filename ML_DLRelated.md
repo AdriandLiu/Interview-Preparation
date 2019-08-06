@@ -745,14 +745,24 @@ W_rec  = 1
 3. Decide what we're going to output
 	* First, we run a **sigmoid layer** which decides what parts of the cell state we’re going to output. Then, we put the cell state through **tanh (to push the values to be between −1 and 1)** and **multiply** it by the output of the sigmoid gate, so that we only output the parts we decided to.
 
+#### Why use Tanh and Sigmoid
+Tanh and sigmoid have
 
+* Well defined gradient at all points
+
+* They are both easily converted into probabilities. The sigmoid is directly approximated to be a probability. (As its 0-1); Tanh can be converted to probability by (tanh+1)/2 will be between 0-1
+
+* Well defined thresholds for classes. -> tanh-> 0 and sigmoid -> 0.5
+
+* They can both be used in calculating the binary crossentropy for classification
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NDUxMjU0MywtMTExMDkwOTQzMywtOT
-E2MTk3Mjk4LC0xOTU1MjM0NTUxLC0xNjM4NDc5OTUyLDQ1NjYy
-MzYxNSwtMTIwMDc3ODkzOCwxNzk1MzYyMTkyLDgwMTk5ODE3My
-wxMTk4ODE2MTUyLC0xNzA3MDY3MDY1XX0=
+eyJoaXN0b3J5IjpbLTIxNDUyMjM5MzgsLTU0NDUxMjU0MywtMT
+ExMDkwOTQzMywtOTE2MTk3Mjk4LC0xOTU1MjM0NTUxLC0xNjM4
+NDc5OTUyLDQ1NjYyMzYxNSwtMTIwMDc3ODkzOCwxNzk1MzYyMT
+kyLDgwMTk5ODE3MywxMTk4ODE2MTUyLC0xNzA3MDY3MDY1XX0=
+
 -->
