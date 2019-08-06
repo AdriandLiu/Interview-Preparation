@@ -682,6 +682,9 @@ padding的上限是维持feature map 大小与原图大小一致，具体增加p
 
 # RNN (Recurrent Neural Network) 
 
+
+
+
 ### The Vanishing Gradient Problem
 
 
@@ -718,7 +721,7 @@ W_rec  = 1
 [](./pics/LSTM.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU2NjIzNjE1LC0xMjAwNzc4OTM4LDE3OT
-UzNjIxOTIsODAxOTk4MTczLDExOTg4MTYxNTIsLTE3MDcwNjcw
-NjVdfQ==
+eyJoaXN0b3J5IjpbODgxNjA0MTY5LDQ1NjYyMzYxNSwtMTIwMD
+c3ODkzOCwxNzk1MzYyMTkyLDgwMTk5ODE3MywxMTk4ODE2MTUy
+LC0xNzA3MDY3MDY1XX0=
 -->
