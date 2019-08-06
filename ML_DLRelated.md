@@ -692,14 +692,14 @@ While backproporgating, the weights are getting smaller as shows above will caus
 
 #### Solution
 1. Exploding Gradient
-	* Truncated Backpropagation (step BP after a certain point; that's probably not optimal because then you're not updating all the weights.)
-	* Penalties
-	* Gradient Clipping
+	* **Truncated Backpropagation** (step BP after a certain point; that's probably not optimal because then you're not updating all the weights; if you don't stop, then you're just going to have a completely irrelevant network.)
+	* **Penalties** (penalize gradient)
+	* **Gradient Clipping** (have a maximum limit for the gradient.)
 2. Vanishing Gradient
 	* Weight Initialization
 	* Echo State Networks
 	* LSTM
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA2MDE2NDQxLDgwMTk5ODE3MywxMTk4OD
-E2MTUyLC0xNzA3MDY3MDY1XX0=
+eyJoaXN0b3J5IjpbLTE0MTAwOTg5NTAsODAxOTk4MTczLDExOT
+g4MTYxNTIsLTE3MDcwNjcwNjVdfQ==
 -->
