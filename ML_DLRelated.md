@@ -743,11 +743,12 @@ W_rec  = 1
 	* a sigmoid layer called the “input gate layer” decides which values we’ll update. 
 	* a tanh layer creates a vector of new candidate values, C~t, that could be added to the state
 3. Decide what we're going to output
-	* 
+	* First, we run a **sigmoid layer** which decides what parts of the cell state we’re going to output. Then, we put the cell state through **tanh (to push the values to be between −1 and 1)** and **multiply** it by the output of the sigmoid gate, so that we only output the parts we decided to.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTExNzcyNTksLTExMTA5MDk0MzMsLT
-kxNjE5NzI5OCwtMTk1NTIzNDU1MSwtMTYzODQ3OTk1Miw0NTY2
-MjM2MTUsLTEyMDA3Nzg5MzgsMTc5NTM2MjE5Miw4MDE5OTgxNz
-MsMTE5ODgxNjE1MiwtMTcwNzA2NzA2NV19
+eyJoaXN0b3J5IjpbMTAzMTQ0MjMzLC0xMTEwOTA5NDMzLC05MT
+YxOTcyOTgsLTE5NTUyMzQ1NTEsLTE2Mzg0Nzk5NTIsNDU2NjIz
+NjE1LC0xMjAwNzc4OTM4LDE3OTUzNjIxOTIsODAxOTk4MTczLD
+ExOTg4MTYxNTIsLTE3MDcwNjcwNjVdfQ==
 -->
