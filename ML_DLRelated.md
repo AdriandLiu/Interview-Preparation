@@ -739,15 +739,15 @@ W_rec  = 1
 
 ### Procedure
 1. Decide what information we're going to **throw away** from the cell state (forget gate, value range from 0-1 by sigmoid)
-2. Decide what new information we’re going to **store/add in the cell state** (**The sigmoid (0~1) layer tells us which (or what proportion of) values to update and the tanh (-1~1) layer tells us how to update the state**)
+2. Decide what new information we’re going to **store/add in the cell state** (**The sigmoid (0~1) layer tells us which (or what proportion of) values to update and the tanh (-1~1) layer tells us how to update the state**); ***why tanh***: After the addition operator the absolute value of c(t) is potentially larger than 1. Passing it through a tanh operator ensures the values are **scaled between -1 and 1 again**, thus **increasing stability** during back-propagation over many timesteps.
 	* a sigmoid layer called the “input gate layer” decides which values we’ll update. 
 	* a tanh layer creates a vector of new candidate values, C~t, that could be added to the state
 3. Decide what we're going to output
 	* 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NDQ1NTkzLC0xMTEwOTA5NDMzLC05MT
-YxOTcyOTgsLTE5NTUyMzQ1NTEsLTE2Mzg0Nzk5NTIsNDU2NjIz
-NjE1LC0xMjAwNzc4OTM4LDE3OTUzNjIxOTIsODAxOTk4MTczLD
-ExOTg4MTYxNTIsLTE3MDcwNjcwNjVdfQ==
+eyJoaXN0b3J5IjpbLTE4MTExNzcyNTksLTExMTA5MDk0MzMsLT
+kxNjE5NzI5OCwtMTk1NTIzNDU1MSwtMTYzODQ3OTk1Miw0NTY2
+MjM2MTUsLTEyMDA3Nzg5MzgsMTc5NTM2MjE5Miw4MDE5OTgxNz
+MsMTE5ODgxNjE1MiwtMTcwNzA2NzA2NV19
 -->
