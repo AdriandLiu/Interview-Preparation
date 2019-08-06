@@ -682,6 +682,10 @@ padding的上限是维持feature map 大小与原图大小一致，具体增加p
 
 # RNN (Recurrent Neural Network) 
 
+[GIF LSTM&RNN Procedure](https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21)
+[YouTube](https://www.youtube.com/watch?time_continue=193&v=8HyCNIVRbSU)
+
+
 Short-term memory dependency, not capable for long-term memory
 
 ### The Vanishing Gradient Problem In RNN
@@ -725,7 +729,20 @@ While backproporgating, the weights are getting smaller as shows above will caus
 
 ## LSTM (Long Short-Term Memory)
 
+[GIF LSTM Procedure](https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21)
+[YouTube](https://www.youtube.com/watch?time_continue=193&v=8HyCNIVRbSU)
+
+
 [Understanding LSTM](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+
+
+### Forget gate
+This gate decides what information should be thrown away or kept, The closer to 0 means to forget, and the closer to 1 means to keep.
+
+### Input Gate
+To update the cell state (memory pipeline); decides what information is relevant to add from the current step
+### Output Gate
+The output gate decides what the next hidden state should be
 
 Avoid gradient vanishing
 HOW:
@@ -738,6 +755,8 @@ W_rec  = 1
 [](./pics/LSTM.png)
 
 ### Procedure
+[GIF LSTM Procedure](https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21)
+[YouTube](https://www.youtube.com/watch?time_continue=193&v=8HyCNIVRbSU)
 1. Decide what information we're going to **throw away** from the cell state (forget gate, value range from 0-1 by sigmoid)
 2. Decide what new information we’re going to **store/add in the cell state** ; 
 	* a sigmoid layer called the “input gate layer” decides which values we’ll update. 
@@ -766,14 +785,20 @@ Tanh and sigmoid have
 [LSTM Variations](https://colah.github.io/posts/2015-08-Understanding-LSTMs#variants-on-long-short-term-memory)
 
 1. [](./pics/LSTM3-var-peepholes.png)
-	* The above diagram adds peepholes to all the gates, but many papers will give some peepholes and not others.
-2. 
+	* This means that we let the gate layers look at the cell state. The above diagram adds peepholes to all the gates, but many papers will give some peepholes and not others.
+2. [](/pics/LSTM3-var-tied.png)
+	* We only forget when we’re going to input something in its place. We only input new values to the state when we forget something older.
+3. [](./pics/LSTM3-var-GRU.png)
+	* Cheaper computational cost
+	* 3 gates vs 2 gates in gru
+	* no ouput gate, no second non linearity and they don't have memory ct it is same as hidden state in gru.
+	* **update gate** in gru does the work of **input and forget gate in lstm.**
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzg2OTA5MDAsLTYwNDI3Njk0MSwtMj
-E0NTIyMzkzOCwtNTQ0NTEyNTQzLC0xMTEwOTA5NDMzLC05MTYx
-OTcyOTgsLTE5NTUyMzQ1NTEsLTE2Mzg0Nzk5NTIsNDU2NjIzNj
-E1LC0xMjAwNzc4OTM4LDE3OTUzNjIxOTIsODAxOTk4MTczLDEx
-OTg4MTYxNTIsLTE3MDcwNjcwNjVdfQ==
+eyJoaXN0b3J5IjpbNjI2OTU2NTEzLC02MDQyNzY5NDEsLTIxND
+UyMjM5MzgsLTU0NDUxMjU0MywtMTExMDkwOTQzMywtOTE2MTk3
+Mjk4LC0xOTU1MjM0NTUxLC0xNjM4NDc5OTUyLDQ1NjYyMzYxNS
+wtMTIwMDc3ODkzOCwxNzk1MzYyMTkyLDgwMTk5ODE3MywxMTk4
+ODE2MTUyLC0xNzA3MDY3MDY1XX0=
 -->
