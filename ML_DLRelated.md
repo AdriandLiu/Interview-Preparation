@@ -765,13 +765,15 @@ Tanh and sigmoid have
 
 [LSTM Variations](https://colah.github.io/posts/2015-08-Understanding-LSTMs#variants-on-long-short-term-memory)
 
-
+1. [](./pics/LSTM3-var-peepholes.png)
+	* The above diagram adds peepholes to all the gates, but many papers will give some peepholes and not others.
+2. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NjgwNjYwMiwtNjA0Mjc2OTQxLC0yMT
-Q1MjIzOTM4LC01NDQ1MTI1NDMsLTExMTA5MDk0MzMsLTkxNjE5
-NzI5OCwtMTk1NTIzNDU1MSwtMTYzODQ3OTk1Miw0NTY2MjM2MT
-UsLTEyMDA3Nzg5MzgsMTc5NTM2MjE5Miw4MDE5OTgxNzMsMTE5
-ODgxNjE1MiwtMTcwNzA2NzA2NV19
+eyJoaXN0b3J5IjpbLTEyNzg2OTA5MDAsLTYwNDI3Njk0MSwtMj
+E0NTIyMzkzOCwtNTQ0NTEyNTQzLC0xMTEwOTA5NDMzLC05MTYx
+OTcyOTgsLTE5NTUyMzQ1NTEsLTE2Mzg0Nzk5NTIsNDU2NjIzNj
+E1LC0xMjAwNzc4OTM4LDE3OTUzNjIxOTIsODAxOTk4MTczLDEx
+OTg4MTYxNTIsLTE3MDcwNjcwNjVdfQ==
 -->
