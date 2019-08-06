@@ -746,9 +746,9 @@ W_rec  = 1
 	* First, we run a **sigmoid layer** which decides what parts of the cell state we’re going to output. Then, we put the cell state through **tanh (to push the values to be between −1 and 1)** and **multiply** it by the output of the sigmoid gate, so that we only output the parts we decided to.
 
 #### Why use Tanh and Sigmoid
-* ***The sigmoid (0~1) layer tells us which (or what proportion of) values to update and the tanh (-1~1) layer tells us how to update the state***
+* ***The sigmoid (0~1) layer tells us which (or what proportion of) values to update and the tanh (-1~1) layer tells us how to update the state (increase or decrease)***
 
-* ***The output from tanh can be positive or negative, allowing for increases and decreases in the state.***
+* ***The output from tanh can be positive or negative, determining whether increases and decreases in the state.***
 
 * After the addition operator the absolute value of c(t) is potentially larger than 1. Passing it through a tanh operator ensures the values are **scaled between -1 and 1 again**, thus **increasing stability** during back-propagation over many timesteps.
 
@@ -768,9 +768,9 @@ Tanh and sigmoid have
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzODUwMDA3MSwtMjE0NTIyMzkzOCwtNT
-Q0NTEyNTQzLC0xMTEwOTA5NDMzLC05MTYxOTcyOTgsLTE5NTUy
-MzQ1NTEsLTE2Mzg0Nzk5NTIsNDU2NjIzNjE1LC0xMjAwNzc4OT
-M4LDE3OTUzNjIxOTIsODAxOTk4MTczLDExOTg4MTYxNTIsLTE3
-MDcwNjcwNjVdfQ==
+eyJoaXN0b3J5IjpbLTEyNTMxODM5MTIsLTIxNDUyMjM5MzgsLT
+U0NDUxMjU0MywtMTExMDkwOTQzMywtOTE2MTk3Mjk4LC0xOTU1
+MjM0NTUxLC0xNjM4NDc5OTUyLDQ1NjYyMzYxNSwtMTIwMDc3OD
+kzOCwxNzk1MzYyMTkyLDgwMTk5ODE3MywxMTk4ODE2MTUyLC0x
+NzA3MDY3MDY1XX0=
 -->
