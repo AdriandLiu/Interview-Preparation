@@ -696,10 +696,10 @@ While backproporgating, the weights are getting smaller as shows above will caus
 	* **Penalties** (penalize gradient)
 	* **Gradient Clipping** (have a maximum limit for the gradient.)
 2. Vanishing Gradient
-	* Weight Initialization
-	* Echo State Networks
-	* LSTM
+	* **Weight Initialization** (initialize your weights to minimize the potential for vanishing gradient.)
+	* **Echo State Networks**
+	* **LSTM**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTAwOTg5NTAsODAxOTk4MTczLDExOT
-g4MTYxNTIsLTE3MDcwNjcwNjVdfQ==
+eyJoaXN0b3J5IjpbOTQzNjkzMTk3LDgwMTk5ODE3MywxMTk4OD
+E2MTUyLC0xNzA3MDY3MDY1XX0=
 -->
