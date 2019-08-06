@@ -725,7 +725,7 @@ While backproporgating, the weights are getting smaller as shows above will caus
 
 ## LSTM (Long Short-Term Memory)
 
-![LSTM]([https://colah.github.io/posts/2015-08-Understanding-LSTMs/](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+[Understanding LSTM](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
 
 Avoid gradient vanishing
 HOW:
@@ -738,14 +738,14 @@ W_rec  = 1
 [](./pics/LSTM.png)
 
 ### Procedure
-1. Decide what information we're going to throw away from the cell state (forget gate, value range from 0-1 by sigmoid)
-2. Decide what new information we’re going to store in the cell state (**The sigmoid layer tells us which (or what proportion of) values to update and the tanh layer tells us how to update the state**)
+1. Decide what information we're going to **throw away** from the cell state (forget gate, value range from 0-1 by sigmoid)
+2. Decide what new information we’re going to **store/add in the cell state** (**The sigmoid layer tells us which (or what proportion of) values to update and the tanh layer tells us how to update the state**)
 	* a sigmoid layer called the “input gate layer” decides which values we’ll update. 
 	* a tanh layer creates a vector of new candidate values, C~t, that could be added to the state
 	* 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2OTQ0NTEyNCwtOTE2MTk3Mjk4LC0xOT
+eyJoaXN0b3J5IjpbMTc0NDU3MTU4MCwtOTE2MTk3Mjk4LC0xOT
 U1MjM0NTUxLC0xNjM4NDc5OTUyLDQ1NjYyMzYxNSwtMTIwMDc3
 ODkzOCwxNzk1MzYyMTkyLDgwMTk5ODE3MywxMTk4ODE2MTUyLC
 0xNzA3MDY3MDY1XX0=
