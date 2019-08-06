@@ -1,4 +1,5 @@
 
+
 # Standard Scaling
 
 * Standardization of a dataset is a common requirement for many machine learning estimators: they might behave badly if the individual features do not more or less look like standard normally distributed data (e.g. Gaussian with 0 mean and unit variance).
@@ -783,7 +784,7 @@ Tanh and sigmoid have
 ### LSTM Variations
 
 [LSTM Variations](https://colah.github.io/posts/2015-08-Understanding-LSTMs#variants-on-long-short-term-memory)
-<img src="./pics/LSTM3-var-peepholes.png" width="400">
+<img ./pics/LSTM3-var-peepholes.png" width="400">
 
 1. <img src="./pics/LSTM3-var-peepholes.png" width="400">
 	* This means that we let the gate layers look at the cell state. The above diagram adds peepholes to all the gates, but many papers will give some peepholes and not others.
@@ -797,10 +798,12 @@ Tanh and sigmoid have
 
 #### Why "1-" in output gate
 Instead of doing selective writes and selective forgets, we define forget as 1 minus write gate. So whatever is not written is forgotten.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMzg5NDM2MCwtNjA0Mjc2OTQxLC0yMT
-Q1MjIzOTM4LC01NDQ1MTI1NDMsLTExMTA5MDk0MzMsLTkxNjE5
-NzI5OCwtMTk1NTIzNDU1MSwtMTYzODQ3OTk1Miw0NTY2MjM2MT
-UsLTEyMDA3Nzg5MzgsMTc5NTM2MjE5Miw4MDE5OTgxNzMsMTE5
-ODgxNjE1MiwtMTcwNzA2NzA2NV19
+eyJoaXN0b3J5IjpbLTEwMDI2MDE2MTUsLTYwNDI3Njk0MSwtMj
+E0NTIyMzkzOCwtNTQ0NTEyNTQzLC0xMTEwOTA5NDMzLC05MTYx
+OTcyOTgsLTE5NTUyMzQ1NTEsLTE2Mzg0Nzk5NTIsNDU2NjIzNj
+E1LC0xMjAwNzc4OTM4LDE3OTUzNjIxOTIsODAxOTk4MTczLDEx
+OTg4MTYxNTIsLTE3MDcwNjcwNjVdfQ==
 -->
