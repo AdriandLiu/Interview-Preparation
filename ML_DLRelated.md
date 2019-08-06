@@ -684,8 +684,10 @@ padding的上限是维持feature map 大小与原图大小一致，具体增加p
 
 ### The Vanishing Gradient Problem
 
+[](./pics/VanishingGradient.png)
 
+While training, the weights are getting smaller whi
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAxOTk4MTczLDExOTg4MTYxNTIsLTE3MD
-cwNjcwNjVdfQ==
+eyJoaXN0b3J5IjpbMzk4MjEyMjU0LDgwMTk5ODE3MywxMTk4OD
+E2MTUyLC0xNzA3MDY3MDY1XX0=
 -->
