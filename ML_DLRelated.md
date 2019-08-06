@@ -794,11 +794,12 @@ Tanh and sigmoid have
 	* no ouput gate, no second non linearity and they don't have memory ct it is same as hidden state in gru.
 	* **update gate** in gru does the work of **input and forget gate in lstm.**
 
-
+#### Why "1-" in output gate
+Instead of doing selective writes and selective forgets, we define forget as 1 minus write gate. So whatever is not written is forgotten.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI2OTU2NTEzLC02MDQyNzY5NDEsLTIxND
-UyMjM5MzgsLTU0NDUxMjU0MywtMTExMDkwOTQzMywtOTE2MTk3
-Mjk4LC0xOTU1MjM0NTUxLC0xNjM4NDc5OTUyLDQ1NjYyMzYxNS
-wtMTIwMDc3ODkzOCwxNzk1MzYyMTkyLDgwMTk5ODE3MywxMTk4
-ODE2MTUyLC0xNzA3MDY3MDY1XX0=
+eyJoaXN0b3J5IjpbMTYwMzg5NDM2MCwtNjA0Mjc2OTQxLC0yMT
+Q1MjIzOTM4LC01NDQ1MTI1NDMsLTExMTA5MDk0MzMsLTkxNjE5
+NzI5OCwtMTk1NTIzNDU1MSwtMTYzODQ3OTk1Miw0NTY2MjM2MT
+UsLTEyMDA3Nzg5MzgsMTc5NTM2MjE5Miw4MDE5OTgxNzMsMTE5
+ODgxNjE1MiwtMTcwNzA2NzA2NV19
 -->
