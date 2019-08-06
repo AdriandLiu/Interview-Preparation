@@ -684,6 +684,10 @@ padding的上限是维持feature map 大小与原图大小一致，具体增加p
 
 ### The Vanishing Gradient Problem
 
+**If a change in the parameter's value causes very small change in the network's output - the network just can't learn the parameter effectively, which is a problem.**
+
+
+
 [](./pics/VanishingGradient.png)
 
 While backproporgating, the weights are getting smaller as shows above will cause the gradient small, training slow and even model will not be able to trained properly. 
@@ -700,6 +704,6 @@ While backproporgating, the weights are getting smaller as shows above will caus
 	* **Echo State Networks**
 	* **LSTM**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQzNjkzMTk3LDgwMTk5ODE3MywxMTk4OD
-E2MTUyLC0xNzA3MDY3MDY1XX0=
+eyJoaXN0b3J5IjpbMTg1MjI2MDA5Myw4MDE5OTgxNzMsMTE5OD
+gxNjE1MiwtMTcwNzA2NzA2NV19
 -->
