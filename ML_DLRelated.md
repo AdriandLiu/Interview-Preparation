@@ -689,11 +689,13 @@ padding的上限是维持feature map 大小与原图大小一致，具体增加p
 
 Weights are assigned at the start of the neural network with the random values, which are close to zero, and from there the network trains them up. But, when you start with wrec close to zero and multiply xt, xt-1, xt-2, xt-3, … by this value, your gradient becomes less and less with each multiplication.
 
+**RNN中容易出现Gradient Vanishing是因为在梯度在向后传递的时候，由于相同的矩阵相乘次数太多，梯度倾向于逐渐消失，导致后面的结点无法更新参数，整个学习过程无法正常进行.**
+
 #### Why
 
 [](./pics/RNN.png)
 
-This arrow means that long-term information has to sequentially travel through all cells before getting to the present processing cell. This means it can be easily corrupted by being multiplied many time by small numbers < 0. This is the cause of vanishing gradients.
+This arrow means that long-term information has to **sequentially** travel through all cells before getting to the present processing cell. This means it can be **easily corrupted by being multiplied many time by small numbers < 0.** This is the cause of vanishing gradients.
 
 
 #### Problem
@@ -729,7 +731,7 @@ W_rec  = 1
 [](./pics/LSTM.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzMwNDkwMDksLTE2Mzg0Nzk5NTIsND
-U2NjIzNjE1LC0xMjAwNzc4OTM4LDE3OTUzNjIxOTIsODAxOTk4
-MTczLDExOTg4MTYxNTIsLTE3MDcwNjcwNjVdfQ==
+eyJoaXN0b3J5IjpbLTg2MjM5OTc1OCwtMTYzODQ3OTk1Miw0NT
+Y2MjM2MTUsLTEyMDA3Nzg5MzgsMTc5NTM2MjE5Miw4MDE5OTgx
+NzMsMTE5ODgxNjE1MiwtMTcwNzA2NzA2NV19
 -->
