@@ -729,7 +729,7 @@ While backproporgating, the weights are getting smaller as shows above will caus
 Avoid gradient vanishing
 HOW:
 　　**Question: How do GRU fix vanishing gradient problem?(GRU如何解决梯度消失的问题？)**
-　　1. 在标准的RNN中，梯度是严格的按照所有的中间节点流动的，而LSTM在网络中创造了适应性的短连接（create adaptive shortcut connection）。**在LSTM中，可以选择性的遗忘和记忆此前的信息，在梯度的流动中做了短连接，避免梯度计算中的大量累积.**
+　　1. 在标准的RNN中，梯度是严格的按照所有的中间节点流动的，而LSTM在网络中创造了适应性的短连接（create adaptive shortcut connection）。**在LSTM中，可以选择性的遗忘和记忆此前的信息，在梯度的流动中做了短连接，避免梯度计算中的大量累积.** (add new info / remove older info with itsweights)
 　　2. 通过公式也可以看出，在LSTM中，Ct=f_t∗C_t−1+i_t∗C_t˜C_t=f_t∗C_t−1+i_t∗C_t~，其中C_t−1 C_t−1是此前的信息，Ct˜Ct~是当前时刻的新信息，CtCt是最终的信息。**可以看到CtCt和Ct−1Ct−1此时是线性关系，不再是RNN中的乘积关系，因此梯度在计算的时候不再是连乘关系，梯度以线性在中间节点流动，因此就会保证很长时间的记忆**
 
 W_rec  = 1
@@ -738,7 +738,7 @@ W_rec  = 1
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDUxOTM3MSwtMTYzODQ3OTk1Miw0NT
-Y2MjM2MTUsLTEyMDA3Nzg5MzgsMTc5NTM2MjE5Miw4MDE5OTgx
-NzMsMTE5ODgxNjE1MiwtMTcwNzA2NzA2NV19
+eyJoaXN0b3J5IjpbLTExMzA1ODc5LC0xNjM4NDc5OTUyLDQ1Nj
+YyMzYxNSwtMTIwMDc3ODkzOCwxNzk1MzYyMTkyLDgwMTk5ODE3
+MywxMTk4ODE2MTUyLC0xNzA3MDY3MDY1XX0=
 -->
