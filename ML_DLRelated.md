@@ -715,7 +715,10 @@ While backproporgating, the weights are getting smaller as shows above will caus
 
 W_rec  = 1
 
+[](./pics/LSTM.png)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDA3Nzg5MzgsMTc5NTM2MjE5Miw4MD
-E5OTgxNzMsMTE5ODgxNjE1MiwtMTcwNzA2NzA2NV19
+eyJoaXN0b3J5IjpbNDU2NjIzNjE1LC0xMjAwNzc4OTM4LDE3OT
+UzNjIxOTIsODAxOTk4MTczLDExOTg4MTYxNTIsLTE3MDcwNjcw
+NjVdfQ==
 -->
