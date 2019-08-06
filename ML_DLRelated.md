@@ -682,8 +682,7 @@ padding的上限是维持feature map 大小与原图大小一致，具体增加p
 
 # RNN (Recurrent Neural Network) 
 
-
-
+Short-term memory dependency, not capable for long-term memory
 
 ### The Vanishing Gradient Problem In RNN
 
@@ -739,7 +738,8 @@ W_rec  = 1
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTUyMzQ1NTEsLTE2Mzg0Nzk5NTIsND
-U2NjIzNjE1LC0xMjAwNzc4OTM4LDE3OTUzNjIxOTIsODAxOTk4
-MTczLDExOTg4MTYxNTIsLTE3MDcwNjcwNjVdfQ==
+eyJoaXN0b3J5IjpbLTkxNjE5NzI5OCwtMTk1NTIzNDU1MSwtMT
+YzODQ3OTk1Miw0NTY2MjM2MTUsLTEyMDA3Nzg5MzgsMTc5NTM2
+MjE5Miw4MDE5OTgxNzMsMTE5ODgxNjE1MiwtMTcwNzA2NzA2NV
+19
 -->
