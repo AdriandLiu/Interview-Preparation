@@ -747,7 +747,11 @@ W_rec  = 1
 
 #### Why use Tanh and Sigmoid
 Tanh and sigmoid have
+
+* ***The output from tanh can be positive or negative, allowing for increases and decreases in the state.***
+
 * After the addition operator the absolute value of c(t) is potentially larger than 1. Passing it through a tanh operator ensures the values are **scaled between -1 and 1 again**, thus **increasing stability** during back-propagation over many timesteps.
+
 * Well defined gradient at all points
 
 * They are both easily converted into probabilities. The sigmoid is directly approximated to be a probability. (As its 0-1); Tanh can be converted to probability by (tanh+1)/2 will be between 0-1
@@ -760,9 +764,9 @@ Tanh and sigmoid have
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYxNDE2MTUsLTIxNDUyMjM5MzgsLTU0ND
-UxMjU0MywtMTExMDkwOTQzMywtOTE2MTk3Mjk4LC0xOTU1MjM0
-NTUxLC0xNjM4NDc5OTUyLDQ1NjYyMzYxNSwtMTIwMDc3ODkzOC
-wxNzk1MzYyMTkyLDgwMTk5ODE3MywxMTk4ODE2MTUyLC0xNzA3
-MDY3MDY1XX0=
+eyJoaXN0b3J5IjpbLTE0Mjk0NzI1OTIsLTIxNDUyMjM5MzgsLT
+U0NDUxMjU0MywtMTExMDkwOTQzMywtOTE2MTk3Mjk4LC0xOTU1
+MjM0NTUxLC0xNjM4NDc5OTUyLDQ1NjYyMzYxNSwtMTIwMDc3OD
+kzOCwxNzk1MzYyMTkyLDgwMTk5ODE3MywxMTk4ODE2MTUyLC0x
+NzA3MDY3MDY1XX0=
 -->
