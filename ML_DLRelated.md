@@ -713,7 +713,9 @@ While backproporgating, the weights are getting smaller as shows above will caus
 
 ## LSTM (Long Short-Term Memory)
 
+W_rec  = 1
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NTM2MjE5Miw4MDE5OTgxNzMsMTE5OD
-gxNjE1MiwtMTcwNzA2NzA2NV19
+eyJoaXN0b3J5IjpbLTEyMDA3Nzg5MzgsMTc5NTM2MjE5Miw4MD
+E5OTgxNzMsMTE5ODgxNjE1MiwtMTcwNzA2NzA2NV19
 -->
