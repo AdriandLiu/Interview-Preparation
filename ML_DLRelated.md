@@ -690,7 +690,14 @@ While backproporgating, the weights are getting smaller as shows above will caus
 
 [](./pics/VanishingExploding.png)
 
+#### Solution
+1. Exploding Gradient
+	* Truncated Backpropagation
+	* Penalties
+	* Gradient Clipping
+2. Vanishing Gradient
+	* Weight Initi
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MDY2MTMxNSw4MDE5OTgxNzMsMTE5OD
-gxNjE1MiwtMTcwNzA2NzA2NV19
+eyJoaXN0b3J5IjpbLTE1MDE3ODQ2MzcsODAxOTk4MTczLDExOT
+g4MTYxNTIsLTE3MDcwNjcwNjVdfQ==
 -->
