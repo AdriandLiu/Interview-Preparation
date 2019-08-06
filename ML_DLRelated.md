@@ -739,7 +739,7 @@ W_rec  = 1
 
 ### Procedure
 1. Decide what information we're going to **throw away** from the cell state (forget gate, value range from 0-1 by sigmoid)
-2. Decide what new information we’re going to **store/add in the cell state** (**The sigmoid (0~1) layer tells us which (or what proportion of) values to update and the tanh (-1~1) layer tells us how to update the state**); ***why tanh***: After the addition operator the absolute value of c(t) is potentially larger than 1. Passing it through a tanh operator ensures the values are **scaled between -1 and 1 again**, thus **increasing stability** during back-propagation over many timesteps.
+2. Decide what new information we’re going to **store/add in the cell state** (**The sigmoid (0~1) layer tells us which (or what proportion of) values to update and the tanh (-1~1) layer tells us how to update the state**); 
 	* a sigmoid layer called the “input gate layer” decides which values we’ll update. 
 	* a tanh layer creates a vector of new candidate values, C~t, that could be added to the state
 3. Decide what we're going to output
@@ -747,7 +747,7 @@ W_rec  = 1
 
 #### Why use Tanh and Sigmoid
 Tanh and sigmoid have
-
+* After the addition operator the absolute value of c(t) is potentially larger than 1. Passing it through a tanh operator ensures the values are **scaled between -1 and 1 again**, thus **increasing stability** during back-propagation over many timesteps.
 * Well defined gradient at all points
 
 * They are both easily converted into probabilities. The sigmoid is directly approximated to be a probability. (As its 0-1); Tanh can be converted to probability by (tanh+1)/2 will be between 0-1
@@ -760,9 +760,9 @@ Tanh and sigmoid have
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDUyMjM5MzgsLTU0NDUxMjU0MywtMT
-ExMDkwOTQzMywtOTE2MTk3Mjk4LC0xOTU1MjM0NTUxLC0xNjM4
-NDc5OTUyLDQ1NjYyMzYxNSwtMTIwMDc3ODkzOCwxNzk1MzYyMT
-kyLDgwMTk5ODE3MywxMTk4ODE2MTUyLC0xNzA3MDY3MDY1XX0=
-
+eyJoaXN0b3J5IjpbODYxNDE2MTUsLTIxNDUyMjM5MzgsLTU0ND
+UxMjU0MywtMTExMDkwOTQzMywtOTE2MTk3Mjk4LC0xOTU1MjM0
+NTUxLC0xNjM4NDc5OTUyLDQ1NjYyMzYxNSwtMTIwMDc3ODkzOC
+wxNzk1MzYyMTkyLDgwMTk5ODE3MywxMTk4ODE2MTUyLC0xNzA3
+MDY3MDY1XX0=
 -->
