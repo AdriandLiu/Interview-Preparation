@@ -735,11 +735,14 @@ W_rec  = 1
 
 [](./pics/LSTM.png)
 
-
+### Procedure
+1. Decide what information we're going to throw away from the cell state (forget gate, value range from 0-1 by sigmoid)
+2. Decide what new information we’re going to store in the cell state
+	* 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNjE5NzI5OCwtMTk1NTIzNDU1MSwtMT
-YzODQ3OTk1Miw0NTY2MjM2MTUsLTEyMDA3Nzg5MzgsMTc5NTM2
-MjE5Miw4MDE5OTgxNzMsMTE5ODgxNjE1MiwtMTcwNzA2NzA2NV
-19
+eyJoaXN0b3J5IjpbLTE2MjM2NDE5LC05MTYxOTcyOTgsLTE5NT
+UyMzQ1NTEsLTE2Mzg0Nzk5NTIsNDU2NjIzNjE1LC0xMjAwNzc4
+OTM4LDE3OTUzNjIxOTIsODAxOTk4MTczLDExOTg4MTYxNTIsLT
+E3MDcwNjcwNjVdfQ==
 -->
