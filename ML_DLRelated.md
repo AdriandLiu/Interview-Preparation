@@ -746,9 +746,13 @@ W_rec  = 1
 	* First, we run a **sigmoid layer** which decides what parts of the cell state we’re going to output. Then, we put the cell state through **tanh (to push the values to be between −1 and 1)** and **multiply** it by the output of the sigmoid gate, so that we only output the parts we decided to.
 
 
+
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzMTQ0MjMzLC0xMTEwOTA5NDMzLC05MT
-YxOTcyOTgsLTE5NTUyMzQ1NTEsLTE2Mzg0Nzk5NTIsNDU2NjIz
-NjE1LC0xMjAwNzc4OTM4LDE3OTUzNjIxOTIsODAxOTk4MTczLD
-ExOTg4MTYxNTIsLTE3MDcwNjcwNjVdfQ==
+eyJoaXN0b3J5IjpbLTU0NDUxMjU0MywtMTExMDkwOTQzMywtOT
+E2MTk3Mjk4LC0xOTU1MjM0NTUxLC0xNjM4NDc5OTUyLDQ1NjYy
+MzYxNSwtMTIwMDc3ODkzOCwxNzk1MzYyMTkyLDgwMTk5ODE3My
+wxMTk4ODE2MTUyLC0xNzA3MDY3MDY1XX0=
 -->
