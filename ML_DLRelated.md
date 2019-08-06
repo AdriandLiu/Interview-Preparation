@@ -696,7 +696,7 @@ Weights are assigned at the start of the neural network with the random values, 
 
 #### Why
 
-[](./pics/RNN.png)
+[](./pics/RNN.png =250x)
 
 This arrow means that long-term information has to **sequentially** travel through all cells before getting to the present processing cell. This means it can be **easily corrupted by being multiplied many time by small numbers < 0.** This is the cause of vanishing gradients.
 
