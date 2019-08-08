@@ -800,10 +800,20 @@ Tanh and sigmoid have
 Instead of doing selective writes and selective forgets, we define forget as 1 minus write gate. So whatever is not written is forgotten.
 
 
+### Standardisation vs Normalisation
+
+[](./pics/standardvsnormal.png)
+
+
+### Timestep
+60 timesteps of the past information from which our RNN is gonna try to learn and understand some correlations, or some trends, and based on its understanding, it's going to try to predict the next output.
+
+Too small number will cause overfitting
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MTkwMjIyMiwtNjA0Mjc2OTQxLC0yMT
-Q1MjIzOTM4LC01NDQ1MTI1NDMsLTExMTA5MDk0MzMsLTkxNjE5
-NzI5OCwtMTk1NTIzNDU1MSwtMTYzODQ3OTk1Miw0NTY2MjM2MT
-UsLTEyMDA3Nzg5MzgsMTc5NTM2MjE5Miw4MDE5OTgxNzMsMTE5
-ODgxNjE1MiwtMTcwNzA2NzA2NV19
+eyJoaXN0b3J5IjpbNzIwOTYwODQ0LC02MDQyNzY5NDEsLTIxND
+UyMjM5MzgsLTU0NDUxMjU0MywtMTExMDkwOTQzMywtOTE2MTk3
+Mjk4LC0xOTU1MjM0NTUxLC0xNjM4NDc5OTUyLDQ1NjYyMzYxNS
+wtMTIwMDc3ODkzOCwxNzk1MzYyMTkyLDgwMTk5ODE3MywxMTk4
+ODE2MTUyLC0xNzA3MDY3MDY1XX0=
 -->
