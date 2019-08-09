@@ -61,3 +61,36 @@ regressor.compile(optimizer = "adam", loss = "mean_squared_error")
 
 # Fit LSTM
 regressor.fit(X_train, y_train, epochs = 100, batch_size = 32)
+
+
+
+# Part three prediction
+# Get the real stock price
+dataset_test = pd.read_csv("/home/donghan/DeepLearning/Recurrent_Neural_Networks/Google_Stock_Price_Test.csv")
+read_stock_price = dataset_test.iloc[:,1:2].values
+
+
+# Get the predicted stock price
+dataset_total = pd.concat([dataset_train['Open'], dataset_test['Open']], axis=0)
+inputs = dataset_total[len(dataset_total)-len(dataset_test)-60:].values
+inputs = inputs.reshape(-1,1)
+# (-1,1) Automatically calculate the number of vectors in row by column number
+inputs = sc.transform(inputs)
+# No fit_transform because sc already fitted with training data
+
+X_test = []
+for i in range(60,80):
+    X_test.append(inputs[i-60:i,0])
+X_test = np.array(X_test)
+X_test = np.reshape(X_test,(X_test.shape[0], X_test.shape[1],1))
+predicted_stock_price = regressor.predict(X_test)
+predicted_stock_price = sc.inverse_transform(predicted_stock_price)
+
+
+plt.plot(real_stock_price, color = "red", label = "Real Google Stock Price")
+plt.plot(predicted_stock_price, color = "blue", label = "Predicted Google Stock Price")
+plt.title("Google Stock Price Prediction")
+plt.xlabel("Time")
+plt.ylabel("Google Stock Price")
+plt.legend()
+plt.show()
