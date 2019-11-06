@@ -18,4 +18,4 @@ Larger sample size narrow the distribution of test statistics, so power increase
 ![](./pics/confidence level.PNG)
 ![](./pics/power.png)
 
-![](./pics/calculations.png)
+![](./pics/calculations.PNG)
