@@ -15,7 +15,7 @@ Larger sample size narrow the distribution of test statistics, so power increase
 11. Margin of error, m, SE_pool * Z_score(1.96) The larger the margin of error, the less confidence one should have that the poll's reported results are close to the "true" figures; that is, the figures for the whole population
 12. Confidence interval, (d_hat - m, d_hat + m). Presentation: if d_hat - m > d_min, it means it is highly likely that the difference of click-through-prob is at least d_min%, say 2%. 
 **IF m < statistical significant level AND d_hat - m > d_min, which means they are both significant, then LAUNCH**
-![](./pics/confidence level.PNG)
+![](./pics/confidence_level.PNG)
 ![](./pics/power.png)
 
 ![](./pics/calculations.PNG)
