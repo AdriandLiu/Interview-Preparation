@@ -367,7 +367,6 @@ MSE VS CROSS-ENTROPY
 
 [Example of Popular CNN Architectures, refer to *Classic Network* section](https://www.analyticsvidhya.com/blog/2018/12/guide-convolutional-neural-network-cnn/)
 
-Extract features from input image or prior layers
 
 **Conv layer keep the dimension of input image or prior layer data (extract features/generate feature maps or filters), while pooling layer decrease the data dimension exponentially (extract more important feature)**
 
@@ -388,38 +387,47 @@ Extract features from input image or prior layers
 
 **CODE EXAMPLES:**
 
+kernal = filter = conv
+
+Pytorch example:
+self.conv1 = nn.Conv2d(3, 6, 5) <br />
+#in_channels = 3 RGB the input channels of prior layer or input image <br />
+				#out_channels = 16 the number of filters <br />
+				#kernel_size = 5 the convolutional kernel/filter sizes <br />
+				#Finally, **we will input 3 channels RGB image and produce 16 filters of (5,5) kernal size** <br />
+
 [Keras Function Input Explaination](https://stackoverflow.com/questions/44747343/keras-input-explanation-input-shape-units-batch-size-dim-etc)
 
 ##### Initialising the CNN
 classifier = Sequential()
 
 ##### Step 1 - Convolution (two covolutional layers) #Conv layer can be followed by BN as well.
-input_size = (128, 128)
-classifier.add(Conv2D(32, (3, 3), input_shape=(*input_size, 3)))
-classifier.add(Activation("relu"))
-classifier.add(Conv2D(32, (3, 3), activation = "relu"))
+input_size = (128, 128) <br />
+classifier.add(Conv2D(32, (3, 3), input_shape=(*input_size, 3))) <br />
+classifier.add(Activation("relu")) <br />
+classifier.add(Conv2D(32, (3, 3), activation = "relu")) <br />
 
 ##### Step 2 - Pooling
-classifier.add(MaxPooling2D(pool_size=(2, 2)))  # 2x2 is optimal
-classifier.add(BatchNormalization())
-classifier.add(Dropout(0.2))
+classifier.add(MaxPooling2D(pool_size=(2, 2)))  # 2x2 is optimal <br />
+classifier.add(BatchNormalization()) <br />
+classifier.add(Dropout(0.2)) <br />
 
 ##### Adding a second convolutional(two)-pooling pair of layers #Conv layer can be followed by BN as well.
 classifier.add(Conv2D(32, (3, 3)))
-classifier.add(Activation("relu"))
-classifier.add(Conv2D(32, (3, 3), activation = "relu"))
-classifier.add(MaxPooling2D(pool_size=(2, 2)))
-classifier.add(BatchNormalization())
-classifier.add(Dropout(0.2))
+classifier.add(Activation("relu")) <br />
+classifier.add(Conv2D(32, (3, 3), activation = "relu")) <br />
+classifier.add(MaxPooling2D(pool_size=(2, 2))) <br />
+classifier.add(BatchNormalization()) <br />
+classifier.add(Dropout(0.2)) <br />
 
 ##### Adding a third convolutional(three)-pooling pair of layers #Conv layer can be followed by BN as well.
 classifier.add(Conv2D(64, (3, 3)))
-classifier.add(Activation("relu")) 
-classifier.add(Conv2D(64, (3, 3), activation = "relu"))
-classifier.add(Conv2D(64, (3, 3), activation = "relu"))
-classifier.add(MaxPooling2D(pool_size=(2, 2)))
-classifier.add(BatchNormalization())
-classifier.add(Dropout(0.2))
+classifier.add(Activation("relu")) <br />
+classifier.add(Conv2D(64, (3, 3), activation = "relu")) <br />
+classifier.add(Conv2D(64, (3, 3), activation = "relu")) <br />
+classifier.add(MaxPooling2D(pool_size=(2, 2))) <br />
+classifier.add(BatchNormalization()) <br />
+classifier.add(Dropout(0.2)) <br />
 
 
 ##### Step 3 - Flattening
@@ -427,7 +435,7 @@ classifier.add(Flatten())
 
 ##### Step 4 - Full connection
 classifier.add(Dense(units=64, activation='relu'))
-classifier.add(Dropout(0.2))
+classifier.add(Dropout(0.2)) <br />
 classifier.add(Dense(units=1, activation='sigmoid'))
 
 ##### Compiling the CNN
@@ -468,6 +476,9 @@ Convolutional Neural Networks are (usually) supervised methods for image/object 
 
 Once you have decided the size of the filters, as much as the initialization of the filters is important to "guide" the learning, you can indeed initialize them to random values, and let the learning do the work.
 
+Convoluntional layer: Extract features from input image or prior layers
+
+![](./pics/convLayer.gif)
 
   
 
@@ -497,7 +508,9 @@ Once you have decided the size of the filters, as much as the initialization of 
 
 ![](./pics/MaxPooling.png)
 
-  
+Pooling layer: This is to **decrease the computational power** required to process the data through dimensionality reduction. Furthermore, it is useful for **extracting dominant features** which are rotational and positional invariant, thus maintaining the process of effectively training of the model.
+
+![](./pics/pooling.gif)
 
   
 
