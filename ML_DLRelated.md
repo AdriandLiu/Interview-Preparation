@@ -222,7 +222,7 @@ The Dummy variable trap is a scenario where there are attributes which are highl
 
   
 
-![](./pics/activation functions.png)
+![](./pics/activation_functions.png)
 
   
 
@@ -238,11 +238,11 @@ The Dummy variable trap is a scenario where there are attributes which are highl
 
 #### Example
 
-![](./pics/softmax example.png)
+![](./pics/softmax_example.png)
 
 #### Formula
 
-![](./pics/softmax formula.png)
+![](./pics/softmax_formula.png)
 
   
 
